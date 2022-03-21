@@ -2,32 +2,56 @@
     padding: 0;
     width: 100%;
     justify-content: space-between;
-    display: inline-block;
+    display: flex;
     vertical-align: middle;
     align-items: center;
 }
   
 .navbar-links {
-    position: relative;
-    justify-content: space-between;
-    display: inline;
-    vertical-align: middle;
+    display: flex;
     align-items: center;
+    margin-right: -24px;
 }
 
 .navbar-item {
-    display: inline;
-    margin: 10px;
-    font-size: 17px;
-    color: #FFFFFF; 
-    font-family: LEMON MILK; 
-    vertical-align: middle;
+    font-family: LEMON MILK Light;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
     align-items: center;
+    text-decoration: none;
+    padding: 0 3rem;
+    height: 100%;
+    cursor: pointer;
 }
 
 .logo {
     left: 0;
     display: inline;
-    height: 25px;
-    width: auto;
+    height: 25%;
 }
+
+.button {
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 11px system-ui;
+    padding: 1px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-image: initial;
+  }

@@ -1,7 +1,7 @@
 .body {
   background-color: #0E1616;
   overflow-x: hidden;
-  padding: 1em;
+  padding: 2em;
 }
 
 h2 {
@@ -12,34 +12,37 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-.logo {
-  left: 0;
-  display: inline;
-  height: 25px;
-  width: auto;
+.landing-info {
+  color: white;
+  width: 50vw;
+  text-align: center;
 }
 
-.button {
-  -webkit-appearance: button;
-  -webkit-writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  color: buttontext;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  cursor: default;
-  background-color: buttonface;
-  box-sizing: border-box;
-  margin: 0em;
-  font: 400 11px system-ui;
-  padding: 1px 7px 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
-  border-image: initial;
+.team-landing-image {
+  width: 50vh;
+  height: 100%;
+}
+
+.landing {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+}
+
+.right-landing {
+  align-items: center;
+  display: block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.logo-landing {
+  position: relative;
+}
+
+.jett-landing {
+  position:absolute;
+  right: 0;
+  mix-blend-mode: lighten;
 }
