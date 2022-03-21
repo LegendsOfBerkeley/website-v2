@@ -2,34 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import homePhoto from './images/homePhoto.png'
 import glow from './images/glow.svg'
-import homeLogo from './images/homeLogo.svg'
-
-function NavItem(props) {
-  return (
-    <h1 className="navbar-item">{props.name}</h1>
-  );
-}
-// home button 
-function HomeButton() {
-  return (
-    <img src = {homeLogo} className="logo"/>
-  )
-}
-
-function Nav() {
-  return (
-    <div className="nav">
-      <HomeButton></HomeButton>
-      <div className="navbar-links">
-        <NavItem name={"About"}></NavItem>
-        <NavItem name={"Championship"}></NavItem>
-        <NavItem name={"Competitive"}></NavItem>
-        <NavItem name={"Shop"}></NavItem>
-        <NavItem name={"Discord"}></NavItem> // will turn this into an image in a bit
-      </div>
-    </div>
-  )
-}
+import Nav from './navbar/Nav.js'
 
 function Home() {
   return(

@@ -1,0 +1,33 @@
+.nav {
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+}
+  
+.navbar-links {
+    position: relative;
+    justify-content: space-between;
+    display: inline;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.navbar-item {
+    display: inline;
+    margin: 10px;
+    font-size: 17px;
+    color: #FFFFFF; 
+    font-family: LEMON MILK; 
+    vertical-align: middle;
+    align-items: center;
+}
+
+.logo {
+    left: 0;
+    display: inline;
+    height: 25px;
+    width: auto;
+}

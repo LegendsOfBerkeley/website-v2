@@ -4,33 +4,6 @@
   padding: 1em;
 }
 
-.nav {
-  padding: 0;
-  width: 100%;
-  justify-content: space-between;
-  display: inline-block;
-  vertical-align: middle;
-  align-items: center;
-}
-
-.navbar-item {
-  display: inline;
-  margin: 10px;
-  font-size: 17px;
-  color: #FFFFFF; 
-  font-family: LEMON MILK; 
-  vertical-align: middle;
-  align-items: center;
-}
-
-.navbar-links {
-  position: relative;
-  justify-content: space-between;
-  display: inline;
-  vertical-align: middle;
-  align-items: center;
-}
-
 h2 {
   font-family: LEMON MILK;
   color: #25FFE5;
@@ -42,7 +15,7 @@ h2 {
 .logo {
   left: 0;
   display: inline;
-  height: 10px;
+  height: 25px;
   width: auto;
 }
 
