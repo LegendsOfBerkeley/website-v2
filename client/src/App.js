@@ -3,6 +3,7 @@ import './App.css';
 import homePhoto from './images/homePhoto.png'
 import jett from './images/jett.png'
 import glow from './images/glow.svg'
+import games from './images/games.png'
 import Nav from './navbar/Nav.js'
 
 function Home() {
@@ -20,8 +21,15 @@ function Home() {
         </p>
       </div>
       <img src = {jett} className="jett-landing"></img>
+    </div> 
+  )
+}
+function GamesWeRepresent() {
+  return (
+    <div>
+      <h3>GAMES WE REPRESENT</h3>
+      <img src={games} className="games-we-represent" /> 
     </div>
-    
   )
 }
 
@@ -34,6 +42,7 @@ function App() {
     <div className="body">
       <Nav></Nav>
       <Home></Home>
+      <GamesWeRepresent></GamesWeRepresent>
     </div>
   );
 }
