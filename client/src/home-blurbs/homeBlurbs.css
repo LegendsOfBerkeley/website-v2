@@ -1,0 +1,18 @@
+/* Attempting to make components for the home blurbs, currently not rendering it in App.js bc it's still in progress - Jen */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+.blurb {
+    display: flex; 
+    align-items:right; 
+    justify-content: right; 
+}
+.blurb-title-text {
+    font-family: LEMON MILK;
+    color: white; 
+    font-weight: 400;
+    font-size: 60px; 
+  }
+.blurb-text {
+    font-family: Oxygen; 
+    color: white; 
+}

@@ -4,6 +4,7 @@ import homePhoto from './images/homePhoto.png'
 import jett from './images/jett.png'
 import glow from './images/glow.svg'
 import games from './images/games.png'
+import sponsors from './images/sponsors.png'
 import Nav from './navbar/Nav.js'
 
 function Home() {
@@ -27,8 +28,16 @@ function Home() {
 function GamesWeRepresent() {
   return (
     <div>
-      <h3>GAMES WE REPRESENT</h3>
-      <img src={games} className="games-we-represent" /> 
+      <h3 className="games-and-sponsors-text">GAMES WE REPRESENT</h3>
+      <img src={games} className="games-img" /> 
+    </div>
+  )
+}
+function Sponsors() {
+  return (
+    <div>
+      <h3 className="games-and-sponsors-text">SPONSORS</h3>
+      <img src={sponsors} className="sponsors-img" /> 
     </div>
   )
 }
@@ -43,6 +52,7 @@ function App() {
       <Nav></Nav>
       <Home></Home>
       <GamesWeRepresent></GamesWeRepresent>
+      <Sponsors></Sponsors>
     </div>
   );
 }
