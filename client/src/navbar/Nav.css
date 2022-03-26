@@ -28,7 +28,8 @@
 .logo {
     left: 0;
     display: inline;
-    height: 25%;
+    height: 8em;
+    width: auto;
 }
 
 .button {

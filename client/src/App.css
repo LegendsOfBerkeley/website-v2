@@ -14,37 +14,49 @@ h2 {
 
 .landing-info {
   color: white;
-  width: 50vw;
+  width: 30vw;
   text-align: center;
+  font-size: 20px;
 }
 
 .team-landing-image {
   width: 50vh;
-  height: 100%;
+  height: auto;
+  align-items: center;
 }
 
-.landing {
-  display: flex;
-  width: 100%;
+.showcase .landing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  height: 80vh;
   align-items: center;
   margin: auto;
 }
 
+.subheader {
+  text-align: center;
+}
+
 .right-landing {
   align-items: center;
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  vertical-align: middle;
 }
 
 .logo-landing {
   position: relative;
+  height: 120%;
+  width: 120%;
 }
 
 .jett-landing {
-  position:absolute;
+  position: absolute;
   right: 0;
+  top: 20vh;
   mix-blend-mode: lighten;
+  z-index:0;
 }
 
 /* centering is still a bit off */
