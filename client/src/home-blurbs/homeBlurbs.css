@@ -1,18 +1,37 @@
-/* Attempting to make components for the home blurbs, currently not rendering it in App.js bc it's still in progress - Jen */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
-.blurb {
+.blurb-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    height: 60vh;
+    align-items: center;
+    margin: auto;
+  }
+/* icon + header */
+.blurb-title {
     display: flex; 
-    align-items:right; 
-    justify-content: right; 
+    flex-direction: row; 
 }
+/* just header */
 .blurb-title-text {
     font-family: LEMON MILK;
     color: white; 
     font-weight: 400;
-    font-size: 60px; 
-  }
-.blurb-text {
+    font-size: 60px;
+}
+/* just icon */
+.blurb-title-icon {
+    display: inline-flex; 
+    padding-right: 1em;
+}
+.blurb-paragraph {
     font-family: Oxygen; 
     color: white; 
+    font-size: 20px; 
+}
+.blurb-img {
+    width: 50vh; 
+    height: auto; 
+    align-items: center; 
 }

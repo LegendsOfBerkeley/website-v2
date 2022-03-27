@@ -7,6 +7,7 @@ import games from './images/games.png'
 import events from './images/button_events.png'
 import sponsors from './images/sponsors.png'
 import Nav from './navbar/Nav.js'
+import AllBlurbs from './home-blurbs/homeBlurbs';
 
 function Home() {
   return(
@@ -46,16 +47,13 @@ function Sponsors() {
   )
 }
 
-function button() {
-  
-}
-
 function App() {
   return (
     <div className="body">
       <Nav></Nav>
       <Home></Home>
       <GamesWeRepresent></GamesWeRepresent>
+      <AllBlurbs></AllBlurbs>
       <Sponsors></Sponsors>
     </div>
   );
