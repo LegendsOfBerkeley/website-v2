@@ -17,8 +17,8 @@
 .blurb-title-text {
     font-family: LEMON MILK;
     color: white; 
-    font-weight: 400;
-    font-size: 60px;
+    font-weight: 500;
+    font-size: 48.63px;
 }
 /* just icon */
 .blurb-title-icon {
@@ -28,10 +28,19 @@
 .blurb-paragraph {
     font-family: Oxygen; 
     color: white; 
-    font-size: 20px; 
+    font-size: 20.47px; 
+    line-height: 35px;
+    margin-top: -10px;
 }
 .blurb-img {
-    width: 50vh; 
+    width: 60vh; 
     height: auto; 
     align-items: center; 
+}
+
+.blurb-img-right {
+    width: 60vh; 
+    height: auto; 
+    align-items: center; 
+    margin-left: 120px;
 }

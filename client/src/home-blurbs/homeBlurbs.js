@@ -40,7 +40,7 @@ function LeftBlurb(props) {
                 </div>
                 <p className="blurb-paragraph">{props.blurb}</p>
             </div>
-            <img src = {props.img} className="blurb-img" />
+            <img src = {props.img} className="blurb-img-right" />
         </div>
     )
 }
