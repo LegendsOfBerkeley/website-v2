@@ -10,6 +10,10 @@ import photo_championship from '../images/photo_championship.png'
 import championship_icon from '../images/icons/championship.svg'
 import photo_competitive from '../images/photo_competitive.png'
 import team_icon from '../images/icons/team.svg'
+import join_our_discord_button from '../images/join-our-discord.png'
+import view_upcoming_events_button from '../images/view-upcoming-events.png'
+import become_a_champion_button from '../images/become-a-champion.png'
+import learn_about_competitive_button from '../images/learn-about-competitive.png'
 
 function button(props) {
 
@@ -25,6 +29,7 @@ function RightBlurb(props) {
                     <p className="blurb-title-text">{props.title}</p>
                 </div>
                 <p className="blurb-paragraph">{props.blurb}</p>
+                <img src = {props.button} className="blurb-button" />
             </div>
         </div>
     )
@@ -39,6 +44,7 @@ function LeftBlurb(props) {
                     <p className="blurb-title-text">{props.title}</p>
                 </div>
                 <p className="blurb-paragraph">{props.blurb}</p>
+                <img src = {props.button} className="blurb-button" />
             </div>
             <img src = {props.img} className="blurb-img-right" />
         </div>
@@ -48,10 +54,10 @@ function LeftBlurb(props) {
 function AllBlurbs(props) {
     return (
         <div>
-            <RightBlurb img={photo_community} icon={users_group_icon} title={"Community"} blurb={"Our community loves discussing the latest competitive esports games, character reworks, map changes, and finding new friends to duo queue or play inhouses with. We welcome any students interested in League, Teamfight Tactics, Legends of Runeterra, or Valorant, regardless of level or rank."}></RightBlurb>
-            <LeftBlurb img={photo_events} icon={calendar_check_icon} title={"Events"} blurb={"From LAN parties to tournaments to board game nights, Berkeley Legends hosts a variety of events open to all Berkeley students! Keep an eye on our event calendar for upcoming events, and check out our photo albums for memories from the past ones."}></LeftBlurb>
-            <RightBlurb img={photo_championship} icon={championship_icon} title={"Championship"} blurb={"For those who enjoy the company at Berkeley Legends and want to see more, we offer an optional paid Champions program granting bonus perks such as access to family system, Champion-exclusive socials, free tournament admission, custom discord emotes, and more!"}></RightBlurb>
-            <LeftBlurb img={photo_competitive} icon={team_icon} title={"Competitive Teams"} blurb={"We are proud to host Division 1 and 2 collegiate esports teams in League of Legends and Valorant, representing UC Berkeley at tournaments across the country. Find out more about our teams and make sure to cheer on the Golden Bears this season!"}></LeftBlurb>
+            <RightBlurb img={photo_community} icon={users_group_icon} title={"Community"} blurb={"Our community loves discussing the latest competitive esports games, character reworks, map changes, and finding new friends to duo queue or play inhouses with. We welcome any students interested in League, Teamfight Tactics, Legends of Runeterra, or Valorant, regardless of level or rank."} button={join_our_discord_button}></RightBlurb>
+            <LeftBlurb img={photo_events} icon={calendar_check_icon} title={"Events"} blurb={"From LAN parties to tournaments to board game nights, Berkeley Legends hosts a variety of events open to all Berkeley students! Keep an eye on our event calendar for upcoming events, and check out our photo albums for memories from the past ones."} button={view_upcoming_events_button}></LeftBlurb>
+            <RightBlurb img={photo_championship} icon={championship_icon} title={"Championship"} blurb={"For those who enjoy the company at Berkeley Legends and want to see more, we offer an optional paid Champions program granting bonus perks such as access to family system, Champion-exclusive socials, free tournament admission, custom discord emotes, and more!"} button={become_a_champion_button}></RightBlurb>
+            <LeftBlurb img={photo_competitive} icon={team_icon} title={"Competitive Teams"} blurb={"We are proud to host Division 1 and 2 collegiate esports teams in League of Legends and Valorant, representing UC Berkeley at tournaments across the country. Find out more about our teams and make sure to cheer on the Golden Bears this season!"} button={learn_about_competitive_button}></LeftBlurb>
         </div>
     )
 }
