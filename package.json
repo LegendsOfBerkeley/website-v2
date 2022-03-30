@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-embedded-google-calendar": "^1.0.11"
+  }
+}
