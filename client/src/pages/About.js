@@ -3,7 +3,14 @@ import './About.css';
 import Nav from '../navbar/Nav.js';
 import topRow from '../images/top-row.png'; 
 import bottomRow from '../images/bottom-row.png';
+import pastevents1 from '../images/pastevents1.png';
+import pastevents2 from '../images/pastevents2.png';
+import pastevents3 from '../images/pastevents3.png';
+import pastevents4 from '../images/pastevents4.png';
 import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
+import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+
 function Header() {
     return (
         <div>
@@ -59,66 +66,58 @@ function EventsCalendar() {
     )
 }
 
-// function PastEvents() {
+/* Attempt at abtraction */
 
-//     let slideIndex = 0;
-//     showSlides();
-    
-//     function showSlides() {
-//       let i;
-//       let slides = document.getElementsByClassName("mySlides");
-//       let dots = document.getElementsByClassName("dot");
-//       for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";  
-//       }
-//       slideIndex++;
-//       if (slideIndex > slides.length) {slideIndex = 1}    
-//       for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//       }
-//       slides[slideIndex-1].style.display = "block";  
-//       dots[slideIndex-1].className += " active";
-//       setTimeout(showSlides, 2000); // Change image every 2 seconds
-//     }
-
+// function slideShowImages(props) {
 //     return (
-//         <body>
+//         <div className="each-fade">
 //             <div>
-//                 <h4 className='header'>PAST EVENTS</h4>
+//                 <img src={props.images} />
 //             </div>
-
-//             <div class="slideshow-container">
-
-//                 <div class="mySlides fade">
-//                     <div class="numbertext">1 / 3</div>
-//                     <img src="img_nature_wide.jpg" style="width:100%"></img>
-//                     <div class="text">Caption Text</div>
-//                 </div>
-
-//                 <div class="mySlides fade">
-//                     <div class="numbertext">2 / 3</div>
-//                     <img src="img_snow_wide.jpg" style="width:100%"></img>
-//                     <div class="text">Caption Two</div>
-//                 </div>
-
-//                 <div class="mySlides fade">
-//                     <div class="numbertext">3 / 3</div>
-//                     <img src="img_mountains_wide.jpg" style="width:100%"></img>
-//                     <div class="text">Caption Three</div>
-//                 </div>
-//             </div>
-
-//             <br></br>
-
-//             <div style="text-align:center">
-//             <span class="dot"></span> 
-//             <span class="dot"></span> 
-//             <span class="dot"></span> 
-//             </div>
-//         </body>
-
-//     )
+//         </div>
+//     );
 // }
+
+function PastEvents() {
+    return (
+    <div>
+        <h4 className='header'>PAST EVENTS</h4>
+        <div className='sizeCorrection'>
+            <div className="slide-container">
+                <Fade>
+                    {/* Attempt at abtraction */}
+
+                    {/* <slideShowImages images={pastevents1}></slideShowImages>
+                    <slideShowImages image={pastevents2}></slideShowImages>
+                    <slideShowImages image={pastevents3}></slideShowImages>
+                    <slideShowImages image={pastevents4}></slideShowImages> */}
+
+                    <div className="each-fade">
+                        <div>
+                            <img src={pastevents1} />
+                        </div>
+                    </div>
+                    <div className="each-fade">
+                        <div>
+                            <img src={pastevents2} />
+                        </div>
+                    </div>
+                    <div className="each-fade">
+                        <div>
+                            <img src={pastevents3} />
+                        </div>
+                    </div>
+                    <div className="each-fade">
+                        <div>
+                            <img src={pastevents4} />
+                        </div>
+                    </div>
+                </Fade>
+            </div>
+        </div>
+    </div>
+    );
+}
 
 function WanttoLearnMore() {
     return (
@@ -137,7 +136,7 @@ function About() {
             <WhatWeDo></WhatWeDo>
             <RecentAnnoucements></RecentAnnoucements>
             <EventsCalendar></EventsCalendar>
-            {/* <PastEvents></PastEvents> */}
+            <PastEvents></PastEvents>
             <WanttoLearnMore></WanttoLearnMore>
         </div>
     )
