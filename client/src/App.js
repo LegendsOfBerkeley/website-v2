@@ -47,6 +47,15 @@ function Sponsors() {
   )
 }
 
+export function LegendsButton(props) {
+  return (
+    <div className="LegendsButton">
+        <button className="btn btn-1">
+        </button>
+      </div>
+  )
+}
+
 function App() {
   return (
     <div className="body">
