@@ -51,6 +51,14 @@
     margin: auto; 
 }
 
+.wwd-row-images {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
 .wwd-subtitles {
     color: white;
     text-align: center;

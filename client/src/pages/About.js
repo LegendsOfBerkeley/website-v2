@@ -1,8 +1,8 @@
 import React from 'react';
 import './About.css';
 import Nav from '../navbar/Nav.js';
-import topRow from '../images/top-row.png'; 
-import bottomRow from '../images/bottom-row.png';
+import topRow from '../images/toprow.png'; 
+import bottomRow from '../images/bottomrow.png';
 import pastevents1 from '../images/pastevents1.png';
 import pastevents2 from '../images/pastevents2.png';
 import pastevents3 from '../images/pastevents3.png';
@@ -29,13 +29,13 @@ function WhatWeDo() {
     return (
         <div>
             <h4 className='header'>WHAT WE DO</h4>
-            
+            <img src = {topRow} className='wwd-row-images'/>
             <div className='wwd-row'>
-            {/* <img src = {topRow}/> */}
                 <p className='wwd-subtitles'>LAN PARTIES</p>
                 <p className='wwd-subtitles'>TOURNAMENTS</p>  
                 <p className='wwd-subtitles'>SOCIALS & BANQUETS</p>  
             </div>
+            <img src = {bottomRow} className='wwd-row-images'/>
             <div className='wwd-row'>
                 <p className='wwd-subtitles'>VIEWING PARTIES</p>
                 <p className='wwd-subtitles'>INDUSTRY NETWORKING</p>  
