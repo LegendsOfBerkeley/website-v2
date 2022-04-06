@@ -3,10 +3,12 @@ import './About.css';
 import Nav from '../navbar/Nav.js';
 import topRow from '../images/toprow.png'; 
 import bottomRow from '../images/bottomrow.png';
+import wwdFull from '../images/wwd-full.png'; 
 import pastevents1 from '../images/pastevents1.png';
 import pastevents2 from '../images/pastevents2.png';
 import pastevents3 from '../images/pastevents3.png';
 import pastevents4 from '../images/pastevents4.png';
+import learnMore from '../images/learn-more.png';
 import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -29,7 +31,7 @@ function WhatWeDo() {
     return (
         <div>
             <h4 className='header'>WHAT WE DO</h4>
-            <img src = {topRow} className='wwd-row-images'/>
+            {/* <img src = {topRow} className='wwd-row-images'/>
             <div className='wwd-row'>
                 <p className='wwd-subtitles'>LAN PARTIES</p>
                 <p className='wwd-subtitles'>TOURNAMENTS</p>  
@@ -40,8 +42,8 @@ function WhatWeDo() {
                 <p className='wwd-subtitles'>VIEWING PARTIES</p>
                 <p className='wwd-subtitles'>INDUSTRY NETWORKING</p>  
                 <p className='wwd-subtitles'>CREATIVE CHALLENGES</p>  
-            </div>
-
+            </div> */}
+            <img src={wwdFull} className='row-images'></img>
         </div>
     )
 }
@@ -123,7 +125,7 @@ function WanttoLearnMore() {
     return (
         <div>
             <h4 className='header'>WANT TO LEARN MORE?</h4>
-
+            <img src={learnMore} className='row-images'></img>
         </div>
     )
 }
