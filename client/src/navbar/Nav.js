@@ -9,9 +9,15 @@ function NavItem(props) {
     );
 }
 
-function NavItemIcon(props) {
+function NavItemIcon() {
     return (
-        <img src = {props.icon} className="navbar-item"/> //maybe button class, i forgot which class we were going to use -Jared
+        <div className="rightButton">
+            <div className="centerDiscordLogo">
+                <img src={discord} className="discord"></img>
+                <div className="discordBG"></div>
+            </div>
+            <div className="longCircle"></div>
+        </div>
     )
 }
 
@@ -31,7 +37,7 @@ function Nav() {
             <NavItem name={"Championship"}></NavItem>
             <NavItem name={"Competitive"}></NavItem>
             <NavItem name={"Shop"}></NavItem>
-            <NavItemIcon icon={discord}></NavItemIcon>
+            <NavItemIcon></NavItemIcon>
         </div>
     </div>
     )

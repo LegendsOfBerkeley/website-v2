@@ -52,7 +52,7 @@ export function LegendsButton(props) {
     <div className="LegendsButton">
         <button className="btn btn-1">
         </button>
-      </div>
+    </div>
   )
 }
 
