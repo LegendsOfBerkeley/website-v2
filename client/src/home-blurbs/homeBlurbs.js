@@ -17,7 +17,7 @@ import view_upcoming_events_button from '../images/view-upcoming-events.png'
 import become_a_champion_button from '../images/become-a-champion.png'
 import learn_about_competitive_button from '../images/learn-about-competitive.png'
 
-function button(props) {
+function Button(props) {
 
 }
 // pic on the left, words on the right
