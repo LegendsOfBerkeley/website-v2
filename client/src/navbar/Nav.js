@@ -1,7 +1,7 @@
 import React from 'react';
 import homeLogo from '../images/homeLogo.svg';
 import './Nav.css';
-import discord from '../images/Discord-Purple.svg'
+import discord from '../images/Discord-Logo-White.svg'
 
 function NavItem(props) {
     return (
@@ -11,12 +11,14 @@ function NavItem(props) {
 
 function NavItemIcon() {
     return (
-        <div className="rightButton">
-            <div className="centerDiscordLogo">
-                <img src={discord} className="discord"></img>
-                <div className="discordBG"></div>
-            </div>
-            <div className="longCircle"></div>
+        <div className="navbar-item">
+            <h1 className="joinus">JOIN US</h1>
+            <button className="btnNav btn-1-Nav">
+                <div className="centerDiscordLogo">
+                    <img src={discord} className="discord"></img>
+                    <div className="discordBG"></div>
+                </div>
+            </button>
         </div>
     )
 }
