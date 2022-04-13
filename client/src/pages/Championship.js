@@ -1,6 +1,6 @@
 import React from 'react'
 import './Championships.css'
-import Nav from '../navbar/Nav'
+import Nav from '../components/navbar/Nav'
 import ticket from '../images/icons/icon_ticket.svg'
 import member from '../images/icons/icon_member.svg'
 import group35 from '../images/icons/Group 35.svg'
@@ -42,7 +42,6 @@ function PerksRight(props) {
 function Championship() {
   return (
     <div className="body">
-      <Nav></Nav>
       <h2 className="games-and-sponsors-text">Championship</h2>
       <p className="landing-info2">
         <b>Regular club membership is completely open.</b><br></br>
@@ -72,9 +71,7 @@ function Championship() {
           </div>
         </div>
       </div>
-      <div className="joinLegendsButton">
-        <LegendsButton title="JOIN US"></LegendsButton>
-      </div>
+      <LegendsButton title="JOIN US" className=""></LegendsButton>
     </div>
   )
 }

@@ -16,61 +16,65 @@
 }
 
 .btn:hover {
-background-position: right center; /* change the direction of the change here */
+    background-position: right center; /* change the direction of the change here */
 }
 
 .btn span {
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.4s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
 }
 
 .btn span:after {
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -10px;
-transition: 0.4s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.4s;
 }
 
 .btn:hover span {
-padding-right: 25px;
+    padding-right: 25px;
 }
 
 .btn:hover span:after {
-opacity: 1;
-right: 0;
+    opacity: 1;
+    right: 0;
 }
 
 .button-text {
-font-family: LEMON MILK;
-color: white; 
-font-weight: 400;
-font-size: 30px; 
-display: flex;
-align-items: center;
-justify-content: center;
-transform: skewX(25deg); 
+    font-family: LEMON MILK;
+    color: white; 
+    font-weight: 400;
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skewX(25deg); 
 }
 
 .btn-1 {
-background-image: linear-gradient(to right, #08C5AE 0%, #08c4ae21 51%, #08C5AE 100%);  /* from figma-- could make the right side darker */ 
-border: none; 
+    background-image: linear-gradient(to right, #08C5AE 0%, #000000 50%, #08C5AE 100%);  /* from figma-- could make the right side darker */ 
+    border: none; 
 }
 
 .overlay {
-padding: 20px;
-width: 200px;
-height: 40px;
-margin: 5px;
-outline: 1px solid white; 
-outline-color: white; /* any color you like! */
-outline-style: solid;
-transform: skewX(-25deg);
-position: relative;
-top: 80px;
-right: -15px;
-z-index: 4;
+    padding: 20px;
+    width: 210px;
+    height: 40px;
+    margin: -5px 0 0 20px;
+    outline: 1px solid white; 
+    outline-color: white; /* any color you like! */
+    outline-style: solid;
+    transform: skewX(-25deg);
+    position: absolute;
+    z-index: 4;
+    pointer-events:none;
+}
+
+.LegendsButton {
+    z-index: 2;
+    align-items: center;
 }

@@ -1,11 +1,12 @@
 import React from 'react';
-import homeLogo from '../images/homeLogo.svg';
+import homeLogo from '../../images/homeLogo.svg';
 import './Nav.css';
-import discord from '../images/Discord-Logo-White.svg'
+import discord from '../../images/Discord-Logo-White.svg'
+import {Link} from "react-router-dom";
 
 function NavItem(props) {
     return (
-      <h1 className="navbar-item">{props.name}</h1>
+        <Link to={props.to} className="navbar-item">{props.name}</Link>
     );
 }
 
@@ -26,7 +27,9 @@ function NavItemIcon() {
 // home button 
 function HomeButton() {
     return (
-        <img src = {homeLogo} className="logo"/>
+        <Link to={"/"}>
+            <img src = {homeLogo} className="logo"/>
+        </Link>
     )
 }
 
@@ -35,10 +38,10 @@ function Nav() {
     <div className="nav">
         <HomeButton></HomeButton>
         <div className="navbar-links">
-            <NavItem name={"About"}></NavItem>
-            <NavItem name={"Championship"}></NavItem>
-            <NavItem name={"Competitive"}></NavItem>
-            <NavItem name={"Shop"}></NavItem>
+            <NavItem name={"About"} to={"/about"}></NavItem>
+            <NavItem name={"Championship"} to={"/championship"}></NavItem>
+            <NavItem name={"Competitive"} to={"/competitive"}></NavItem>
+            <NavItem name={"Shop"} to={"/shop"}></NavItem>
             <NavItemIcon></NavItemIcon>
         </div>
     </div>

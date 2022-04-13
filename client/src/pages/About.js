@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import Nav from '../navbar/Nav.js';
+import Nav from '../components/navbar/Nav.js';
 import topRow from '../images/toprow.png'; 
 import bottomRow from '../images/bottomrow.png';
 import wwdFull from '../images/wwd-full.png'; 
@@ -136,7 +136,6 @@ function WanttoLearnMore() {
 function About() {
     return (
         <div className="body">
-            <Nav></Nav>
             <Header></Header>
             <WhatWeDo></WhatWeDo>
             <RecentAnnoucements></RecentAnnoucements>
