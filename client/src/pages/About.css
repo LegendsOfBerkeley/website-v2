@@ -94,10 +94,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-.about-buttons {
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  margin: 0 5em;
-}

@@ -7,6 +7,7 @@ import events from '../images/button_events.png'
 import sponsors from '../images/sponsors.png'
 import AllBlurbs from '../home-blurbs/homeBlurbs';
 import LegendsButton from '../components/LegendsButton';
+import ThinLegendsButton from '../components/ThinLegendsButton';
 
 function Home() {
   return(

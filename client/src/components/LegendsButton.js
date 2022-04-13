@@ -1,4 +1,6 @@
 import './LegendsButton.css'
+import {Link} from "react-router-dom";
+
 
 function LegendsButton(props) {
     return (
