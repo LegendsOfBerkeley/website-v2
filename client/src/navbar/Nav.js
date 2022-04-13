@@ -12,8 +12,8 @@ function NavItem(props) {
 function NavItemIcon() {
     return (
         <div className="navbar-item">
-            <h1 className="joinus">JOIN US</h1>
             <button className="btnNav btn-1-Nav">
+                <h1 className="joinus">JOIN US</h1>
                 <div className="centerDiscordLogo">
                     <img src={discord} className="discord"></img>
                     <div className="discordBG"></div>
