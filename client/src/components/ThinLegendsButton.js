@@ -1,6 +1,9 @@
 import './ThinLegendsButton.css'
 import {Link} from "react-router-dom";
 
+// The home page buttons are slightly thinner / font is slightly smaller. This new component
+// is only used for those buttons. 
+
 
 function ThinLegendsButton(props) {
     return (
