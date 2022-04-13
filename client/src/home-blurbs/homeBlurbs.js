@@ -3,7 +3,7 @@
 import React from 'react';
 import './homeBlurbs.css';
 // new 
-import LegendsButton from '../App.js'
+// import LegendsButton from '../App.js'
 import photo_community from '../images/photo_community.png'
 import users_group_icon from '../images/icons/Users_Group.svg'
 import photo_events from '../images/photo_events.png'
@@ -17,9 +17,19 @@ import view_upcoming_events_button from '../images/view-upcoming-events.png'
 import become_a_champion_button from '../images/become-a-champion.png'
 import learn_about_competitive_button from '../images/learn-about-competitive.png'
 
-function Button(props) {
-
+export function LegendsButton(props) {
+  return (
+    <div className="LegendsButton">
+      <div className="inner">
+      <button className="btn btn-1">
+          <span className="button-text">{props.title}</span>
+        </button>
+      </div>
+        
+    </div>
+  )
 }
+
 // pic on the left, words on the right
 function RightBlurb(props) {
     return (
