@@ -12,7 +12,7 @@ import learnMore from '../images/learn-more.png';
 import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import LegendsButton from '../components/LegendsButton';
+import LegendsButton from '../components/LegendsButton.js';
 
 function Header() {
     return (
@@ -126,9 +126,10 @@ function WanttoLearnMore() {
     return (
         <div>
             <h4 className='header'>WANT TO LEARN MORE?</h4>
-            <img src={learnMore} className='row-images'></img>
-            <LegendsButton title="Meet Exec"></LegendsButton>
-            <LegendsButton title="FAQS"></LegendsButton>
+            <div className= 'about-buttons'>
+                <LegendsButton title="Meet Exec"></LegendsButton>
+                <LegendsButton title="FAQS"></LegendsButton>
+            </div>
         </div>
     )
 }
