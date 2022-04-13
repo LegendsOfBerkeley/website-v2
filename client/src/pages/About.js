@@ -12,7 +12,7 @@ import learnMore from '../images/learn-more.png';
 import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import { LegendsButton } from '../App';
+import LegendsButton from '../components/LegendsButton';
 
 function Header() {
     return (

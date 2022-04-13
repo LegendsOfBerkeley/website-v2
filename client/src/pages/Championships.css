@@ -93,3 +93,8 @@
     height: auto;
     margin: 1em;
 }
+
+.joinLegendsButton {
+    margin: auto;
+    width: 100vw;
+}

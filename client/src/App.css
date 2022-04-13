@@ -90,17 +90,16 @@ h2 {
 .btn {
   padding: 20px;
   width: 250px;
+  height: auto;
   margin: 5px;
   color: white; /* text color */
-  outline: 2px solid white; 
-  border-color: white; /* any color you like! */
   border-style: solid;
-  outline-offset: 4px; 
+  /*outline-offset: 4px; */
   font-size: 20px;
   text-align: center;
   transition: 0.4s;
   background-size: 200% auto;
-  box-shadow: 0 0 20px #eee; /* optional */
+  /*box-shadow: 0 0 20px #eee;  optional */
   background-color: transparent; /* optional */
   transform: skewX(-25deg);
  }
@@ -148,6 +147,21 @@ h2 {
 .btn-1 {
   background-image: linear-gradient(to right, #08C5AE 0%, #08c4ae21 51%, #08C5AE 100%);  /* from figma-- could make the right side darker */ 
   border: none; 
+}
+
+.overlay {
+  padding: 20px;
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  outline: 1px solid white; 
+  outline-color: white; /* any color you like! */
+  outline-style: solid;
+  transform: skewX(-25deg);
+  position: relative;
+  top: 80px;
+  right: -15px;
+  z-index: 4;
 }
 
 

@@ -48,19 +48,6 @@ function Sponsors() {
   )
 }
 
-export function LegendsButton(props) {
-  return (
-    <div className="LegendsButton">
-      <div className="inner">
-      <button className="btn btn-1">
-          <span className="button-text">{props.title}</span>
-        </button>
-      </div>
-        
-    </div>
-  )
-}
-
 function App() {
   return (
     <div className="body">
@@ -75,4 +62,4 @@ function App() {
 }
 
 
-export default App;
+export default App

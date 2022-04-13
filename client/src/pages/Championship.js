@@ -9,7 +9,7 @@ import merch from '../images/icons/icon_merch.svg'
 import emote from '../images/icons/icon_emote.svg'
 import grouppic from '../images/group pic.png'
 import grouppic2ppl from '../images/group pic 2.png'
-
+import LegendsButton from '../components/LegendsButton';
 
 function PerksLeft(props) {
   return (
@@ -71,6 +71,9 @@ function Championship() {
             <PerksRight title={"CUSTOM DISCORD EMOTE"} logo={emote} description={"Leave a legacy as your face is immortalized in the Berkeley Legends Discord."}></PerksRight>
           </div>
         </div>
+      </div>
+      <div className="joinLegendsButton">
+        <LegendsButton title="JOIN US"></LegendsButton>
       </div>
     </div>
   )
