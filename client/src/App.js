@@ -7,6 +7,7 @@ import games from './images/games.png'
 import events from './images/button_events.png'
 import sponsors from './images/sponsors.png'
 import Nav from './navbar/Nav.js'
+import Footer from './components/Footer.js'
 import AllBlurbs from './home-blurbs/homeBlurbs';
 
 function Home() {
@@ -55,6 +56,7 @@ function App() {
       <GamesWeRepresent></GamesWeRepresent>
       <AllBlurbs></AllBlurbs>
       <Sponsors></Sponsors>
+      <Footer></Footer>
     </div>
   );
 }
