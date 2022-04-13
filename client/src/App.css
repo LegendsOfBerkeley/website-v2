@@ -86,3 +86,70 @@ h2 {
   margin-left: auto;
   margin-right: auto;  
 }
+
+.btn {
+  padding: 20px;
+  width: 250px;
+  margin: 5px;
+  color: white; /* text color */
+  outline: 2px solid white; 
+  border-color: white; /* any color you like! */
+  border-style: solid;
+  outline-offset: 4px; 
+  font-size: 20px;
+  text-align: center;
+  transition: 0.4s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee; /* optional */
+  background-color: transparent; /* optional */
+  transform: skewX(-25deg);
+ }
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.4s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button-text {
+  font-family: LEMON MILK;
+  color: white; 
+  font-weight: 400;
+  font-size: 30px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewX(25deg); 
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #08C5AE 0%, #08c4ae21 51%, #08C5AE 100%);  /* from figma-- could make the right side darker */ 
+  border: none; 
+}
+
+
+
+

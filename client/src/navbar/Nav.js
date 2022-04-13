@@ -1,7 +1,7 @@
 import React from 'react';
 import homeLogo from '../images/homeLogo.svg';
 import './Nav.css';
-import discord from '../images/Discord-Purple.svg'
+import discord from '../images/Discord-Logo-White.svg'
 
 function NavItem(props) {
     return (
@@ -9,9 +9,17 @@ function NavItem(props) {
     );
 }
 
-function NavItemIcon(props) {
+function NavItemIcon() {
     return (
-        <img src = {props.icon} className="navbar-item"/> //maybe button class, i forgot which class we were going to use -Jared
+        <div className="navbar-item">
+            <button className="btnNav btn-1-Nav">
+                <h1 className="joinus">JOIN US</h1>
+                <div className="centerDiscordLogo">
+                    <img src={discord} className="discord"></img>
+                    <div className="discordBG"></div>
+                </div>
+            </button>
+        </div>
     )
 }
 
@@ -31,7 +39,7 @@ function Nav() {
             <NavItem name={"Championship"}></NavItem>
             <NavItem name={"Competitive"}></NavItem>
             <NavItem name={"Shop"}></NavItem>
-            <NavItemIcon icon={discord}></NavItemIcon>
+            <NavItemIcon></NavItemIcon>
         </div>
     </div>
     )

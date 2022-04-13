@@ -1,0 +1,95 @@
+.header {
+    text-align: center;
+}
+
+.landing-info2 {
+    color: white;
+    width: 40vw;
+    text-align: center;
+    font-size: 25px;
+    font-family: Oxygen;
+    margin:auto;
+}
+
+.left {
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 5em;
+}
+
+.right {
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 5em;
+}
+
+.perk {
+    margin: 3em 0;
+}
+
+.logoLeft {
+    height: 10%;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.75em 0 0;
+}
+
+.logoRight {
+    height: 10%;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 0.75em;
+}
+
+.subheader {
+    font-size: 15px;
+    display: inline-block;
+    color:white;
+    font-family: LEMON MILK;
+    font-size: 23px;
+}
+
+.title {
+    display: flex;
+    align-items:center;
+}
+
+.description {
+    color: white;
+    line-height: 1.6;
+    font-family: Oxygen;
+    font-size: 1.3em;
+    margin: 1rm 0;
+}
+
+.grid-container {
+    display: flex;
+    width: 80%;
+    align-items:center;
+    margin: auto;
+    justify-content: center;
+}
+
+.header{
+    font-family: LEMON MILK;
+    color: #FFEAA1;
+    background: -webkit-linear-gradient(#FFEAA1, #CD934E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 113px;
+}
+
+.item {
+    max-width: auto;
+    height: auto;
+    margin: 1em;
+}
