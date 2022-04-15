@@ -2,6 +2,7 @@ import React from 'react';
 import Landing from './pages/Landing';
 import Championship from './pages/Championship';
 import About from './pages/About';
+import Shop from './pages/Shop';
 import Nav from './components/navbar/Nav'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -17,7 +18,7 @@ const App = () => {
             <Route path="/about" element={<About/>}/>
             <Route path="/championship" element={<Championship/>}/>
             <Route path="/competitive"/>
-            <Route path="/shop"/>
+            <Route path="/shop" element={<Shop/>}/>
         </Routes>
       </Router>
       <Footer/>
