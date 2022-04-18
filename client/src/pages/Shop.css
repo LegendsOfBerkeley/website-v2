@@ -18,14 +18,78 @@
 }
 
 .shop-info {
-    color: white;
+    background: linear-gradient(180deg, #FFEAA1 14.9%, #CD934E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     width: 918px;
     text-align: center;
     font-size: 24px;
-    line-height: 35px;
+    /* line-height: 35px; */
     font-family: Oxygen;
     align-items: center;
     margin-top: 61px;
     margin-left: auto; 
     margin-right: auto;
+  }
+
+  .champ-icon {
+    width: 36.94px;
+    height: 43.67px;
+  }
+  .champ-price-icon {
+    width: 27px;
+    height: 31.92px;
+  }
+  .shop-champ-button, .order-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh; 
+  }
+
+  .shop-row {
+      display: flex; 
+      align-items: center;
+    justify-content: center;
+      column-gap: 10vh; 
+
+  }
+
+  .shop-item {
+      max-width: 300px; 
+  }
+
+  .shop-text {
+      display: flex; 
+      justify-content: space-between;
+  }
+  .shop-prices {
+      display: flex; 
+      flex-direction: column; 
+      column-gap: 2px; 
+  }
+
+  .shop-image {
+    width: 300px; 
+    height: 300px; 
+  }
+
+  .product {
+      font-family: Oxygen; 
+      font-weight: 700; 
+      width: 200px; 
+  }
+  .regular-price, .champ-price{
+    font-family: LEMON MILK; 
+  }
+  .regular-price {
+      color: #B4B4B4;
+  }
+  .champ-price {
+    background: linear-gradient(180deg, #FFEAA1 14.9%, #CD934E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
   }
