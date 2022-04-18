@@ -8,7 +8,6 @@ import pastevents1 from '../images/pastevents1.png';
 import pastevents2 from '../images/pastevents2.png';
 import pastevents3 from '../images/pastevents3.png';
 import pastevents4 from '../images/pastevents4.png';
-import learnMore from '../images/learn-more.png';
 import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -127,11 +126,13 @@ function WanttoLearnMore() {
     return (
         <div>
             <h4 className='header'>WANT TO LEARN MORE?</h4>
-            <img src={learnMore} className='row-images'></img>
-            <Link to="/exec">
-                <LegendsButton title="Meet Exec"></LegendsButton>
-            </Link>
-            <LegendsButton title="FAQS"></LegendsButton>
+            <div className='about-buttons'>
+                <Link to="/exec">
+                    <LegendsButton title="Meet Exec"></LegendsButton>
+                </Link>
+                <LegendsButton title="FAQS"></LegendsButton>
+            </div>
+            
         </div>
     )
 }
