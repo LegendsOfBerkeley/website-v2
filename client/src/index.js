@@ -5,11 +5,16 @@ import './index.css';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
+import Championship from './pages/Championship';
+import Shop from './pages/Shop';
+import Play from './pages/Play';
+import About from './pages/About';
+import Exec from './pages/Exec';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* Edit this part to render a specific page */}
-    <App />
+    <Exec />
   </React.StrictMode>,
   document.getElementById('root')
 );
