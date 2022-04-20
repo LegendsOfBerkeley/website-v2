@@ -1,0 +1,52 @@
+.container {
+    font-family: Oxygen;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+      display: block;
+    }
+}
+
+.position {
+    text-transform: uppercase;
+}
+
+.name {
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: LEMON MILK;
+}
+
+.alias {
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: LEMON MILK;
+}
+
+.firstline {
+    display: inline-block;
+    color: #00FFE1;
+}
+
+.info {
+    position: relative;
+}
+
+.card {
+    align-items: center;
+    width: inherit;
+    margin: auto;
+    text-align: center;
+}
+
+.photo {
+    align-items: center;
+    display: inline;
+}
