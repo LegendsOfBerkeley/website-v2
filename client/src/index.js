@@ -4,18 +4,32 @@ import { render } from 'react-dom';
 import './index.css';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
-import Championship from './pages/Championship';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Shop from './pages/Shop';
 import Play from './pages/Play';
 import About from './pages/About';
 import Exec from './pages/Exec';
+import Championship from './pages/Championship';
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     {/* Edit this part to render a specific page */}
+//     <Exec />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* Edit this part to render a specific page */}
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/competitive" element={<Play />} />
+      <Route path="/championship" element={<Championship />} />
+      <Route path="/exec" element={<Exec />} />
+      <Route path="/shop" element={<Shop />} />
+    </Routes>
+  </Router>,
   document.getElementById('root')
 );
 

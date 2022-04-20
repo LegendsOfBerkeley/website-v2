@@ -87,6 +87,7 @@ function Shop() {
 
   return (
     <div className="body">
+      <Nav/>
       <Header></Header>
       {/* <ShopRow></ShopRow> */}
       <div className="category">

@@ -12,17 +12,8 @@ import './App.css'
 const App = () => {
   return (
     <div className="router">
-      <Router>
-        <Nav />
-        <Routes>
-            <Route path="/" exact element={<Landing/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/championship" element={<Championship/>}/>
-            <Route path="/competitive"/>
-            <Route path="/shop" element={<Shop/>}/>
-            <Route path="/exec" element={<Exec/>}/>
-        </Routes>
-      </Router>
+      <Nav/>
+      <Landing/>
       <Footer/>
     </div>
   );
