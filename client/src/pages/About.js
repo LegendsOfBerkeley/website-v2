@@ -140,6 +140,7 @@ function WanttoLearnMore() {
 function About() {
     return (
         <div className="body">
+            <Nav/>    
             <Header></Header>
             <WhatWeDo></WhatWeDo>
             <RecentAnnoucements></RecentAnnoucements>

@@ -1,6 +1,7 @@
 import React from 'react'
 import amyjiang from '../images/execboard/amyjiang.png'
 import './Exec.css'
+import Nav from '../components/navbar/Nav'
 
 function Card(props) {
   return (
@@ -18,6 +19,7 @@ function Card(props) {
 const Exec = () => {
   return (
     <div>
+      <Nav/>
       <h3 className="about-header">EXECUTIVE BOARD</h3>
       <div class="container">
         <Card icon={amyjiang} name={"Amy Jiang"} alias={"FYSIAE"} position={"President"} bio={"Mechanical Engineering + EECS, Class of 2022"}></Card>

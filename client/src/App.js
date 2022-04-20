@@ -14,17 +14,6 @@ const App = () => {
     <div className="router">
       <Nav/>
       <Landing/>
-      {/* <Router>
-        <Nav />
-        <Routes>
-            <Route path="/" exact element={<Landing/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/championship" element={<Championship/>}/>
-            <Route path="/competitive"/>
-            <Route path="/shop" element={<Shop/>}/>
-            <Route path="/exec" element={<Exec/>}/>
-        </Routes>
-      </Router> */}
       <Footer/>
     </div>
   );
