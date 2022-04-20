@@ -1,0 +1,58 @@
+.body {
+    background-color: #0E1616;
+    overflow-x: hidden;
+    padding: 2em;
+  }
+
+.play-header {
+    font-family: LEMON MILK;
+    color: #25FFE5;
+    background: -webkit-linear-gradient(#25FFE5, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-size: 64px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-info {
+    color: white;
+    width: 918px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    font-family: Oxygen;
+    align-items: center;
+    margin-top: 61px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .header{
+    font-family: LEMON MILK;
+    color: #FFEAA1;
+    background: -webkit-linear-gradient(#FFEAA1, #CD934E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 113px;
+}
+
+.subheader{
+    font-family: LEMON MILK;
+    color: #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 113px;
+}

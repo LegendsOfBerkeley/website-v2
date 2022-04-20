@@ -42,6 +42,7 @@ function PerksRight(props) {
 function Championship() {
   return (
     <div className="body">
+      <Nav/>
       <h2 className="games-and-sponsors-text">Championship</h2>
       <p className="landing-info2">
         <b>Regular club membership is completely open.</b><br></br>
