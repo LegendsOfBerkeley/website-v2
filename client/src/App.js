@@ -12,7 +12,9 @@ import './App.css'
 const App = () => {
   return (
     <div className="router">
-      <Router>
+      <Nav/>
+      <Landing/>
+      {/* <Router>
         <Nav />
         <Routes>
             <Route path="/" exact element={<Landing/>}/>
@@ -22,7 +24,7 @@ const App = () => {
             <Route path="/shop" element={<Shop/>}/>
             <Route path="/exec" element={<Exec/>}/>
         </Routes>
-      </Router>
+      </Router> */}
       <Footer/>
     </div>
   );
