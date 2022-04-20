@@ -7,6 +7,7 @@ import placeholder from '../images/shop/placeholder.png'
 import championMedal from '../images/icons/champion-medal.png'
 import {useState} from 'react'; 
 import placeholder2 from '../images/shop/placeholder2.png'
+import placeholder3 from '../images/shop/placeholder3.png'
 
 function Header() {
   return (
@@ -41,15 +42,9 @@ function ShopItem(props) {
   )
 }
 
-// function RenderCategory(props) {
-//   return (
-    
-//   )
-// }
-
 function ShopApparel(props) {
   return (
-    <div>
+    <div className="shop-row">
       <ShopItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
       <ShopItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
       <ShopItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
@@ -57,9 +52,10 @@ function ShopApparel(props) {
     </div>
   )
 }
+
 function ShopAccessories(props) {
   return (
-    <div>
+    <div className="shop-row">
       <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
       <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
       <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
@@ -67,14 +63,21 @@ function ShopAccessories(props) {
   )
 }
 
-
+function ShopPrints(props) {
+  return (
+    <div className="shop-row">
+      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+    </div>
+  )
+}
 
 function Shop() {
   let [category, setCategory] = useState("apparel"); 
 
   function setApparel() {
     setCategory("apparel"); 
-
   }
   
   function setAccessories() {
@@ -89,16 +92,14 @@ function Shop() {
     <div className="body">
       <Nav/>
       <Header></Header>
-      {/* <ShopRow></ShopRow> */}
       <div className="category">
         <button onClick={() => setApparel()}>Apparel</button>
         <button onClick={() => setAccessories()}>Accessories</button>
         <button onClick={() => setPrints()}>Prints</button>
         {category === "apparel" && <ShopApparel/>}
         {category === "accessories" && <ShopAccessories/>}
-    </div>
-      {/* <RenderCategory></RenderCategory> */}
-      {/* <ShopRow></ShopRow> */}
+        {category === "prints" && <ShopPrints/>}
+      </div>
       <div className="order-form">
         <ThinLegendsButton title="GO TO ORDER FORM"></ThinLegendsButton>
       </div>
