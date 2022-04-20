@@ -14,7 +14,7 @@ import Exec from './pages/Exec';
 ReactDOM.render(
   <React.StrictMode>
     {/* Edit this part to render a specific page */}
-    <Exec />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
