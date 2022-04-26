@@ -73,6 +73,13 @@
   .shop-image {
     width: 300px; 
     height: 300px; 
+    transition: transform .2s;
+  }
+
+  .shop-image:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    
   }
 
   .product {
