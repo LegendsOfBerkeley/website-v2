@@ -93,9 +93,12 @@ function Shop() {
       <Nav/>
       <Header></Header>
       <div className="category">
-        <button onClick={() => setApparel()}>Apparel</button>
-        <button onClick={() => setAccessories()}>Accessories</button>
-        <button onClick={() => setPrints()}>Prints</button>
+      {/* will try to make the buttons underline with the states */}
+        <div className="category-buttons-div">
+          <button className="category-button" onClick={() => setApparel()}>Apparel</button>
+          <button className="category-button" onClick={() => setAccessories()}>Accessories</button>
+          <button className="category-button" onClick={() => setPrints()}>Prints</button>
+        </div>
         {category === "apparel" && <ShopApparel/>}
         {category === "accessories" && <ShopAccessories/>}
         {category === "prints" && <ShopPrints/>}

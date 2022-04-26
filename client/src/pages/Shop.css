@@ -93,3 +93,27 @@
     background-clip: text;
     /* text-fill-color: transparent; */
   }
+
+  .category-buttons-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20vh;
+    padding-bottom: 5vh; 
+
+  }
+  .category-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    font-family: LEMON MILK; 
+    font-size: 24px; 
+    font-weight: lighter;
+
+  }
+  /* bandaid solution rn: will try to make the buttons underline with the states */
+  .category-button:hover {
+    text-decoration: underline; 
+  }
