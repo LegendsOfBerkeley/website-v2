@@ -49,25 +49,22 @@
   }
 
   .shop-row {
-      display: flex; 
-      align-items: center;
+    display: flex; 
+    align-items: center;
     justify-content: center;
-      column-gap: 10vh; 
-
+    column-gap: 10vh; 
   }
 
   .shop-item {
       max-width: 300px; 
   }
-
   .shop-text {
-      display: flex; 
-      justify-content: space-between;
+    display: flex; 
+    justify-content: space-between;
   }
+
   .shop-prices {
-      display: flex; 
-      flex-direction: column; 
-      column-gap: 2px; 
+    text-align: right; 
   }
 
   .shop-image {
@@ -78,8 +75,7 @@
 
   .shop-image:hover {
     cursor: pointer;
-    transform: scale(1.5);
-    
+    transform: scale(1.25);
   }
 
   .product {
@@ -98,7 +94,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
+
+  }
+  .sizes {
+    font-family: LEMON MILK; 
+    padding: 0px; 
+    margin-top: -2vh; 
   }
 
   .category-buttons-div {
@@ -120,6 +121,7 @@
     font-weight: lighter;
 
   }
+  
   /* bandaid solution rn: will try to make the buttons underline with the states */
   .category-button:hover {
     text-decoration: underline; 
