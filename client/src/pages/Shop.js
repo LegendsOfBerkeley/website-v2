@@ -32,14 +32,14 @@ function ShopItem(props) {
     <div className="shop-item">
       <img src={props.image} className="shop-image" />
       <div className="shop-text">
-        <p className="product">{props.product}</p>
-        <div className="shop-prices">
-          <p className="regular-price">{props.regular}</p>
-          <p className="champ-price"> <img className="champ-price-icon" src={championMedal}/>
-{props.champ}</p>
-        </div>
-        
+          <p className="product">{props.product}</p>
+          <div className="shop-prices">
+            <p className="regular-price">{props.regular}</p>
+            <p className="champ-price"> <img className="champ-price-icon" src={championMedal}/>{props.champ}</p>
+          </div>
       </div>
+      <p className="sizes"> S M L XL </p>
+
     </div>
   )
 }
@@ -58,9 +58,9 @@ function ShopApparel(props) {
 function ShopAccessories(props) {
   return (
     <div className="shop-row">
-      <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
     </div>
   )
 }
@@ -68,9 +68,9 @@ function ShopAccessories(props) {
 function ShopPrints(props) {
   return (
     <div className="shop-row">
-      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
     </div>
   )
 }
