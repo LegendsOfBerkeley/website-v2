@@ -10,6 +10,7 @@ import Play from './pages/Play';
 import About from './pages/About';
 import Exec from './pages/Exec';
 import Championship from './pages/Championship';
+import FAQ from './pages/FAQ'
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -28,6 +29,7 @@ ReactDOM.render(
       <Route path="/championship" element={<Championship />} />
       <Route path="/exec" element={<Exec />} />
       <Route path="/shop" element={<Shop />} />
+      <Route path="/FAQ" element={<FAQ />} />
     </Routes>
   </Router>,
   document.getElementById('root')

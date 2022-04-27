@@ -1,0 +1,40 @@
+.body {
+    background-color: #0E1616;
+    overflow-x: hidden;
+    padding: 2em;
+  }
+
+.FAQ-header {
+    font-family: LEMON MILK;
+    color: #25FFE5;
+    background: -webkit-linear-gradient(#25FFE5, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-size: 64px; 
+    text-align: center;
+
+}
+
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.textheader{
+    font-family: LEMON MILK;
+    color: white;
+    text-align: left;
+
+}
+
+h5 {
+    font-weight:normal;
+}
+
+.textinfo {
+    font-family: Oxygen;
+    color: white;
+    text-align: left;
+    
+}
