@@ -58,10 +58,14 @@
     right: 0;
     top: 180vh;
     mix-blend-mode: lighten;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   }
 .guy {
     position: absolute;
     left: 0;
     top: 230vh;
     mix-blend-mode: lighten;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
