@@ -53,3 +53,58 @@
     justify-content: center;    
     margin-top: 113px;
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: 230px auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 125px;
+}
+
+.card-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.role {
+  display: inline-flex; 
+  padding-left: 5px;
+}
+
+.info {
+  margin-left: 5px;
+}
+
+/*name of players */
+.name {
+  font-family: LEMON MILK;
+  color: #00FFE1;
+  font-weight: 500;
+  font-size: 25px;
+}
+.role {
+  font-family: LEMON MILK;
+  color: #00FFE1;
+  font-weight: 200;
+  font-size: 25px;
+}
+.major {
+  font-family: LEMON MILK;
+  color: #ffffff;
+  font-weight: 150;
+}
+.year {
+  font-family: LEMON MILK;
+  color: #ffffff;
+  font-weight: 150;
+}
+
+.p {
+  font-family: Oxygen;
+  font-size: 20px;
+}
