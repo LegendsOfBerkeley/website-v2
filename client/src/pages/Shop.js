@@ -8,6 +8,8 @@ import championMedal from '../images/icons/champion-medal.png'
 import {useState} from 'react'; 
 import placeholder2 from '../images/shop/placeholder2.png'
 import placeholder3 from '../images/shop/placeholder3.png'
+import Footer from '../components/Footer'
+
 
 function Header() {
   return (
@@ -106,6 +108,7 @@ function Shop() {
       <div className="order-form">
         <ThinLegendsButton title="GO TO ORDER FORM"></ThinLegendsButton>
       </div>
+      <Footer />
     </div>
   )
 }
