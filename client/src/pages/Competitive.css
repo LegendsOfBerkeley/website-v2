@@ -1,7 +1,6 @@
 .body {
     background-color: #0E1616;
     overflow-x: hidden;
-    padding: 2em;
   }
 
 .play-header {
@@ -37,20 +36,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    font-size: 40px; 
+    font-size: 72px; 
     display: flex;
     align-items: center;
     justify-content: center;    
-    margin-top: 113px;
+    margin-top: 144px;
 }
 
 .subheader{
     font-family: LEMON MILK;
     color: #FFFFFF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: 500;
-    font-size: 40px; 
+    font-size: 70px; 
     display: flex;
     align-items: center;
     justify-content: center;    

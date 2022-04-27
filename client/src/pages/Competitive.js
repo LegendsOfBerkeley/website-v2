@@ -1,5 +1,5 @@
 import React from 'react'
-import './Play.css'
+import './Competitive.css'
 import Nav from '../components/navbar/Nav'
 import ThinLegendsButton from '../components/ThinLegendsButton'
 import {Link} from "react-router-dom";
@@ -60,12 +60,14 @@ function Card(props) {
     )
   }
 
-function Play() {
+function Competitive() {
     return (
       <div className="body">
         <Nav></Nav>
         <Header></Header>
+        <PlayforCal></PlayforCal>
         <League></League>
+        <Achievements></Achievements>
         <Valorant></Valorant>
       </div>
     )
@@ -73,4 +75,4 @@ function Play() {
 
 
 
-  export default Play;
+  export default Competitive;
