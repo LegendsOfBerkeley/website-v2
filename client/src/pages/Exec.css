@@ -1,14 +1,13 @@
 .container {
     font-family: Oxygen;
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-auto-rows: auto;
-    grid-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin: 0 15em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .container {
       display: block;
     }
@@ -41,12 +40,28 @@
 
 .card {
     align-items: center;
-    width: inherit;
-    margin: auto;
+    width: 35%;
+    margin: 1em;
     text-align: center;
+    z-index: 4;
+    
 }
 
 .photo {
     align-items: center;
     display: inline;
+    z-index: 15;
+}
+
+.pengu {
+    position: absolute;
+    right: 0;
+    top: 180vh;
+    mix-blend-mode: lighten;
+  }
+.guy {
+    position: absolute;
+    left: 0;
+    top: 230vh;
+    mix-blend-mode: lighten;
 }

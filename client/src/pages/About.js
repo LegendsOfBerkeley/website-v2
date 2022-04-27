@@ -3,6 +3,7 @@ import './About.css';
 import Nav from '../components/navbar/Nav.js';
 import topRow from '../images/toprow.png'; 
 import bottomRow from '../images/bottomrow.png';
+import Footer from '../components/Footer'
 import wwdFull from '../images/wwd-full.png'; 
 import pastevents1 from '../images/pastevents1.png';
 import pastevents2 from '../images/pastevents2.png';
@@ -147,6 +148,7 @@ function About() {
             <EventsCalendar></EventsCalendar>
             <PastEvents></PastEvents>
             <WanttoLearnMore></WanttoLearnMore>
+            <Footer></Footer>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Championships.css'
 import Nav from '../components/navbar/Nav'
+import Footer from '../components/Footer'
 import ticket from '../images/icons/icon_ticket.svg'
 import member from '../images/icons/icon_member.svg'
 import group35 from '../images/icons/Group 35.svg'
@@ -16,7 +17,7 @@ function PerksLeft(props) {
     <div className="perk">
       <div className="title">
         <img src={props.logo} className="logoLeft"></img>
-        <h className="subheader">{props.title}</h>
+        <h className="perksubheader">{props.title}</h>
       </div>
       <p className="description">
         {props.description}
@@ -29,7 +30,7 @@ function PerksRight(props) {
   return (
     <div className="perk">
       <div className="title">
-        <h className="subheader">{props.title}</h>
+        <h className="perksubheader">{props.title}</h>
         <img src={props.logo} className="logoRight"></img>
       </div>
       <p className="description">
@@ -72,7 +73,8 @@ function Championship() {
           </div>
         </div>
       </div>
-      <LegendsButton title="JOIN US" className=""></LegendsButton>
+      <LegendsButton title="JOIN US" className="centerLegendsButton"></LegendsButton>
+      <Footer></Footer>
     </div>
   )
 }
