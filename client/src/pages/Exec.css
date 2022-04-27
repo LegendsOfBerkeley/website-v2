@@ -1,13 +1,23 @@
-.container {
-    font-family: Oxygen;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-    margin: 0 15em;
+.body {
+    background-color: #0E1616;
 }
 
-@media (max-width: 1200px) {
+.container {
+    font-family: Oxygen;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 800px) {
     .container {
       display: block;
     }
@@ -40,17 +50,19 @@
 
 .card {
     align-items: center;
-    width: 35%;
-    margin: 1em;
+    width: inherit;
+    margin: auto;
     text-align: center;
-    z-index: 4;
-    
 }
 
 .photo {
     align-items: center;
     display: inline;
-    z-index: 15;
+}
+
+#title {
+    text-transform: uppercase;
+    font-family: LEMON MILK;
 }
 
 .pengu {
@@ -68,4 +80,19 @@
     mix-blend-mode: lighten;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
     from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+#title {
+    text-transform: uppercase;
+    font-family: LEMON MILK;
+}
+
+#bioName {
+    color: #00FFE1;
+    text-transform: uppercase;
+    font-family: LEMON MILK;
+}
+
+.tooltip {
+    width: 40%;
 }
