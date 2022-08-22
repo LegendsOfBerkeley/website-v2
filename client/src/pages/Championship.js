@@ -73,7 +73,9 @@ function Championship() {
           </div>
         </div>
       </div>
-      <LegendsButton title="JOIN US" className="centerLegendsButton"></LegendsButton>
+      <div className='joinLegendsButton'>
+        <LegendsButton title="JOIN US" className="centerLegendsButton"></LegendsButton>
+      </div>
       <Footer></Footer>
     </div>
   )

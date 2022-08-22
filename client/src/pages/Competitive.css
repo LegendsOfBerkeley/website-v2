@@ -47,11 +47,9 @@
     font-family: LEMON MILK;
     color: #FFFFFF;
     font-weight: 500;
-    font-size: 70px; 
     display: flex;
     align-items: center;
     justify-content: center;    
-    margin-top: 113px;
 }
 
 .card-container {

@@ -3,7 +3,6 @@ import homePhoto from '../images/homePhoto.png'
 import jett from '../images/jett.png'
 import glow from '../images/glow.svg'
 import games from '../images/games.png'
-import events from '../images/button_events.png'
 import sponsors from '../images/sponsors.png'
 import AllBlurbs from '../home-blurbs/homeBlurbs';
 import LegendsButton from '../components/LegendsButton';

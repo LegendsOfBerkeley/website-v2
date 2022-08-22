@@ -4,9 +4,11 @@
 
 .landing-info2 {
     color: white;
-    width: 40vw;
+    width: 918px;
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
     font-family: Oxygen;
     margin:auto;
 }
@@ -97,10 +99,14 @@
 
 .joinLegendsButton {
     margin: auto;
+    margin-top: 50px;
     width: 100vw;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .centerLegendsButton {
-    display: flex;
+    margin: auto;
+    width: 100vw;
 }

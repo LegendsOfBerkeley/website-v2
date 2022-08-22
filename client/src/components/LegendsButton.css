@@ -1,5 +1,5 @@
 .btn {
-    padding: 20px;
+    padding: 25px;
     width: auto;
     min-width: 250px;
     height: auto;
@@ -49,7 +49,7 @@
     font-family: LEMON MILK;
     color: white; 
     font-weight: 400;
-    font-size: 30px; 
+    font-size: 30%; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@
 
 .overlay {
     padding: 20px;
-    width: auto; 
+    /* width: auto;  */
     width: 210px;
     height: 40px;
     margin: -5px 0 0 20px;
@@ -77,6 +77,7 @@
 }
 
 .LegendsButton {
+    padding-top:25px;
     z-index: 2;
     align-items: center;
 }

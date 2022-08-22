@@ -24,7 +24,7 @@ function RightBlurb(props) {
     return (
         <div className="blurb-container">
             <img src = {props.img} className="blurb-img" />
-            <div>
+            <div className='blurb-text'>
                 <div className="blurb-title">
                     <img src = {props.icon} className="blurb-title-icon" />
                     <p className="blurb-title-text">{props.title}</p>
@@ -39,7 +39,7 @@ function RightBlurb(props) {
 function LeftBlurb(props) {
     return (
         <div className="blurb-container">
-            <div>
+            <div className='blurb-text'>
                 <div className="blurb-title">
                     <img src = {props.icon} className="blurb-title-icon" />
                     <p className="blurb-title-text">{props.title}</p>
@@ -47,6 +47,7 @@ function LeftBlurb(props) {
                 <p className="blurb-paragraph">{props.blurb}</p>
                 <ThinLegendsButton title={props.button}></ThinLegendsButton>
             </div>
+            <img src = {props.img} className="blurb-img" />
         </div>
     )
 }

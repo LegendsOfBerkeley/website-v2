@@ -42,7 +42,9 @@ function Nav() {
             <NavItem name={"Championship"} to={"/championship"}></NavItem>
             <NavItem name={"Competitive"} to={"/competitive"}></NavItem>
             <NavItem name={"Shop"} to={"/shop"}></NavItem>
-            <NavItemIcon></NavItemIcon>
+            <a href='https://tinyurl.com/BLDisco'>
+                <NavItemIcon></NavItemIcon>
+            </a>
         </div>
     </div>
     )
