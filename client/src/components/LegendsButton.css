@@ -49,7 +49,7 @@
     font-family: LEMON MILK;
     color: white; 
     font-weight: 400;
-    font-size: 30%; 
+    font-size: 30px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@
 
 .overlay {
     padding: 20px;
-    /* width: auto;  */
+    width: auto; 
     width: 210px;
     height: 40px;
     margin: -5px 0 0 20px;
