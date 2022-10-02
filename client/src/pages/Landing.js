@@ -7,6 +7,7 @@ import sponsors from '../images/sponsors.png'
 import AllBlurbs from '../home-blurbs/homeBlurbs';
 import LegendsButton from '../components/LegendsButton';
 import ThinLegendsButton from '../components/ThinLegendsButton';
+import { Link } from "react-router-dom";
 
 function Home() {
   return(
@@ -22,7 +23,9 @@ function Home() {
             players. Come join us at our viewing parties, socials, LAN 
             events, tournaments, and more.
           </p>
-          <LegendsButton title="EVENTS"></LegendsButton>
+          <Link to="/about">
+            <LegendsButton title="EVENTS"></LegendsButton>
+          </Link>
         </div>
         <img src = {jett} className="jett-landing"></img>
       </div> 
