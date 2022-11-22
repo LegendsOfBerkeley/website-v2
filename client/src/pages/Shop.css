@@ -17,6 +17,19 @@
 }
 
 .shop-info {
+  color: white;
+  width: 918px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 35px;
+  font-family: Oxygen;
+  align-items: center;
+  margin-top: 61px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.shop-info-champ {
     background: linear-gradient(180deg, #FFEAA1 14.9%, #CD934E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -116,12 +129,26 @@
     cursor: pointer;
 
     font-family: LEMON MILK; 
-    font-size: 24px; 
-    font-weight: lighter;
+    font-size: 20px; 
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* display: table-cell; */
+    /* vertical-align: text-bottom; */
 
+    transition: 0.5s
+
+  }
+
+  .category-button-active {
+    background: linear-gradient(180deg, #FFEAA1 14.9%, #CD934E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 28px; 
   }
   
   /* bandaid solution rn: will try to make the buttons underline with the states */
   .category-button:hover {
     text-decoration: underline; 
+    letter-spacing: 5px;
   }
