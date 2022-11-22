@@ -2,6 +2,20 @@
     text-align: center;
 }
 
+.champ-header {
+    font-family: LEMON MILK;
+    color: #25FFE5;
+    background: -webkit-linear-gradient(#25FFE5, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 64px; 
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .landing-info2 {
     color: white;
     width: 918px;

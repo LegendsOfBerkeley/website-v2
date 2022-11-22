@@ -41,10 +41,10 @@ function ShopItem(props) {
           <p className="product">{props.product}</p>
           <div className="shop-prices">
             <p className="regular-price">{props.regular}</p>
-            <p className="champ-price"> <img className="champ-price-icon" src={championMedal}/>{props.champ}</p>
+            {/* <p className="champ-price"> <img className="champ-price-icon" src={championMedal}/>{props.champ}</p> */}
           </div>
       </div>
-      <p className="sizes"> S M L XL </p>
+      {/* <p className="sizes"> S M L XL </p> */}
 
     </div>
   )
@@ -54,7 +54,7 @@ function ShopApparel(props) {
   return (
     <div className="shop-row">
       <ShopItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={placeholder} product={"Fall 2022 Hoodie"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={placeholder} product={"Fall 2022 Hoodie"} regular={"$50.00"} champ={"$35.00"}></ShopItem>
       {/* <ShopItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem> */}
 
     </div>
@@ -64,9 +64,9 @@ function ShopApparel(props) {
 function ShopAccessories1(props) {
   return (
     <div className="shop-row">
-      <ShopItem image={charmjuice} product={"Charm Juice Sticker"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={meepjuice} product={"Meep Juice Sticker"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={souljuice} product={"Soul Juice Sticker"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={charmjuice} product={"Charm Juice Sticker"} regular={"$3.00"} champ={"$3.00"}></ShopItem>
+      <ShopItem image={meepjuice} product={"Meep Juice Sticker"} regular={"$3.00"} champ={"$3.00"}></ShopItem>
+      <ShopItem image={souljuice} product={"Soul Juice Sticker"} regular={"$3.00"} champ={"$3.00"}></ShopItem>
     </div>
   )
 }
@@ -75,8 +75,8 @@ function ShopAccessories1(props) {
 function ShopAccessories2(props) {
   return (
     <div className="shop-row">
-      <ShopItem image={meeppin} product={"Meep Boba Pin"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={poropin} product={"Poro Boba Pin"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
+      <ShopItem image={meeppin} product={"Meep Boba Pin"} regular={"$8.00"} champ={"$8.00"}></ShopItem>
+      <ShopItem image={poropin} product={"Poro Boba Pin"} regular={"$8.00"} champ={"$8.00"}></ShopItem>
     </div>
   )
 }
@@ -133,7 +133,7 @@ function Shop() {
         {/* {category === "prints" && <ShopPrints/>} */}
       </div>
       <p className='shop-info'>
-        Reach out to us on Discord to order and for the most updated stock and pricing.
+        Reach out to us on Discord to order and for the most updated stock.
       </p>
       <a href='https://tinyurl.com/BLDisco' target="_blank" rel="noopener noreferrer">
         <div className="order-form">

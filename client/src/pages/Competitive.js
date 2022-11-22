@@ -4,6 +4,7 @@ import Nav from '../components/navbar/Nav'
 import ThinLegendsButton from '../components/ThinLegendsButton'
 import {Link} from "react-router-dom";
 import amy_pic from '../images/amy-profile-pic.png';
+import Footer from '../components/Footer'
 
 function Header() {
     return (
@@ -89,10 +90,11 @@ function Competitive() {
       <div className="body">
         <Nav></Nav>
         <Header></Header>
-        <PlayforCal></PlayforCal>
+        {/* <PlayforCal></PlayforCal> */}
         <League></League>
         <Achievements></Achievements>
         <Valorant></Valorant>
+        <Footer />
       </div>
     )
   }

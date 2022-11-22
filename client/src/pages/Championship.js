@@ -44,7 +44,7 @@ function Championship() {
   return (
     <div className="body">
       <Nav/>
-      <h2 className="games-and-sponsors-text">Championship</h2>
+      <h3 className="champ-header">Championship</h3>
       <p className="landing-info2">
         <b>Regular club membership is completely open.</b><br></br>
         Anyone interested in our events is welcome to our public events!<br></br>
