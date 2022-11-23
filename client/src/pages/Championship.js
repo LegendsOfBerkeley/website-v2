@@ -73,9 +73,11 @@ function Championship() {
           </div>
         </div>
       </div>
+      <a href='https://tinyurl.com/BL-Champion-F22'target="_blank" rel="noopener noreferrer">
       <div className='joinLegendsButton'>
         <LegendsButton title="JOIN US" className="centerLegendsButton"></LegendsButton>
       </div>
+      </a>
       <Footer></Footer>
     </div>
   )

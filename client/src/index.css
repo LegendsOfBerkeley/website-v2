@@ -13,3 +13,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "LEMON MILK";
+  src: local("LEMON MILK"),
+    url("./fonts/LEMONMILK-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LEMON MILK";
+  src: local("LEMON MILK"),
+    url("./fonts/LEMONMILK-RegularItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "LEMON MILK";
+  src: local("LEMON MILK"),
+    url("./fonts/LEMONMILK-Light.otf") format("opentype");
+  font-weight: light;
+}
+@font-face {
+  font-family: "LEMON MILK";
+  src: local("LEMON MILK"),
+    url("./fonts/LEMONMILK-LightItalic.otf") format("opentype");
+  font-weight: light;
+  font-style: italic;
+}
+@font-face {
+  font-family: "LEMON MILK";
+  src: local("LEMON MILK"),
+    url("./fonts/LEMONMILK-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "LEMON MILK";
+  src: local("LEMON MILK"),
+    url("./fonts/LEMONMILK-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "LEMON MILK";
+  src: local("LEMON MILK"),
+    url("./fonts/LEMONMILK-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "LEMON MILK";
+  src: local("LEMON MILK"),
+    url("./fonts/LEMONMILK-BoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}

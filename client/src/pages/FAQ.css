@@ -9,7 +9,8 @@
     background: -webkit-linear-gradient(#25FFE5, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: 2px;
     font-size: 64px; 
     text-align: center;
 
@@ -24,6 +25,8 @@
     font-family: LEMON MILK;
     color: white;
     text-align: left;
+    font-style: italic;
+    font-weight: bold;
 
 }
 

@@ -5,14 +5,16 @@ import topRow from '../images/toprow.png';
 import bottomRow from '../images/bottomrow.png';
 import Footer from '../components/Footer'
 import wwdFull from '../images/wwd-full.png'; 
-import pastevents1 from '../images/pastevents1.png';
-import pastevents2 from '../images/pastevents2.png';
-import pastevents3 from '../images/pastevents3.png';
-import pastevents4 from '../images/pastevents4.png';
+import pastevents1 from '../images/events/09-24-aram.png';
+import pastevents2 from '../images/events/10-21-qf-watch.png';
+import pastevents3 from '../images/events/11-13-fall-lan.png';
+import pastevents4 from '../images/events/11-18-blt.png';
+import announce1 from '../images/events/12-04-tandem.png'
 import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import LegendsButton from '../components/LegendsButton';
+import ThinLegendsButton from '../components/ThinLegendsButton.js'
 import {Link} from "react-router-dom";
 
 function Header() {
@@ -54,7 +56,23 @@ function RecentAnnoucements() {
     return (
         <div>
             <h4 className='header'>RECENT ANNOUNCEMENTS</h4>
-
+            <div className="announce-container">
+            <img src = {announce1} className="announce-img" />
+            <div className='announce-text'>
+                <div className="announce-title">
+                    <p className="announce-title-text">Tandem Tournament</p>
+                </div>
+                <p className="announce-paragraph">
+                    We all know it takes two to tango - but do your dancing skills carry over to the Rift? Will you and your partner rival the synergy of Bjergsen + Faker? Or will your attempts at coordination fall short of the Mark? 
+                    <br></br><br></br>
+                    Competitors will break the ice in a series of 2v2 Tandem matches on Sunday, Dec. 4th from 1 to 5 PM at the Cal Esports Community Center.
+                </p>
+                <br></br><br></br>
+                <a href='https://tinyurl.com/F22BLTandemSignup' target="_blank" rel="noopener noreferrer">
+                <ThinLegendsButton title={"Register"}></ThinLegendsButton>
+                </a>
+            </div>
+        </div>
         </div>
     )
 }
@@ -128,10 +146,15 @@ function WanttoLearnMore() {
         <div>
             <h4 className='header'>WANT TO LEARN MORE?</h4>
             <div className='about-buttons'>
-                <Link to="/exec">
-                    <LegendsButton title="Meet Exec"></LegendsButton>
+                <Link to="/exec" onClick={() => {window.scroll(0, 0);}}>
+                    <LegendsButton title="EXEC TEAM"></LegendsButton>
                 </Link>
-                <LegendsButton title="FAQS"></LegendsButton>
+                <Link to="/championship" onClick={() => {window.scroll(0, 0);}}>
+                    <LegendsButton title="CHAMPIONSHIP"></LegendsButton>
+                </Link>
+                <Link to="/faq" onClick={() => {window.scroll(0, 0);}}>
+                <LegendsButton title="FAQ"></LegendsButton>
+                </Link>
             </div>
             
         </div>
@@ -145,7 +168,7 @@ function About() {
             <Header></Header>
             <WhatWeDo></WhatWeDo>
             <RecentAnnoucements></RecentAnnoucements>
-            <EventsCalendar></EventsCalendar>
+            {/* <EventsCalendar></EventsCalendar> */}
             <PastEvents></PastEvents>
             <WanttoLearnMore></WanttoLearnMore>
             <Footer></Footer>

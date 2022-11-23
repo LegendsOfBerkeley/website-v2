@@ -44,6 +44,47 @@
     margin-top: 113px;
 }
 
+.announce-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.announce-img {
+  width: 80vh; 
+  height: auto; 
+  align-items: center; 
+}
+
+.announce-text {
+  width: 50%;
+}
+
+.announce-title {
+  display: flex; 
+  flex-direction: row; 
+}
+
+/* just header */
+.announce-title-text {
+  font-family: LEMON MILK;
+  color: white; 
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.announce-paragraph {
+  font-family: Oxygen; 
+  color: white; 
+  /* font-size: 20.47px;  */
+  /* line-height: 35px; */
+  margin-top: -20px;
+}
+
 .wwd-row {
     display: flex;
     justify-content: center;   

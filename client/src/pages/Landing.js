@@ -14,6 +14,7 @@ function Home() {
     <div className="showcase">
       <div className="landing-container">
         <img src = {homePhoto} className="team-landing-image"/>
+        <img src = {jett} className="jett-landing"></img>
         <div className="right-landing">
           <img src = {glow} className="logo-landing"/>
           <h2 className="subheader">UC BERKELEY'S OFFICIAL RIOT - SPONSORED CLUB</h2>
@@ -23,11 +24,11 @@ function Home() {
             players. Come join us at our viewing parties, socials, LAN 
             events, tournaments, and more.
           </p>
-          <Link to="/about">
+          <Link to="/about" onClick={() => {window.scroll(0, 0);}}>
             <LegendsButton title="EVENTS"></LegendsButton>
           </Link>
         </div>
-        <img src = {jett} className="jett-landing"></img>
+        
       </div> 
     </div>
   )

@@ -12,6 +12,17 @@ import Exec from './pages/Exec';
 import Championship from './pages/Championship';
 import FAQ from './pages/FAQ'
 
+//fonts
+import './fonts/LEMONMILK-Regular.otf';
+import './fonts/LEMONMILK-RegularItalic.otf';
+import './fonts/LEMONMILK-Light.otf';
+import './fonts/LEMONMILK-LightItalic.otf';
+import './fonts/LEMONMILK-Medium.otf';
+import './fonts/LEMONMILK-MediumItalic.otf';
+import './fonts/LEMONMILK-Bold.otf';
+import './fonts/LEMONMILK-BoldItalic.otf';
+
+
 // ReactDOM.render(
 //   <React.StrictMode>
 //     {/* Edit this part to render a specific page */}
