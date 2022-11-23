@@ -18,13 +18,13 @@ code {
   font-family: "LEMON MILK";
   src: local("LEMON MILK"),
     url("./fonts/LEMONMILK-Regular.otf") format("opentype");
-  font-weight: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: "LEMON MILK";
   src: local("LEMON MILK"),
     url("./fonts/LEMONMILK-RegularItalic.otf") format("opentype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
 }
 @font-face {
