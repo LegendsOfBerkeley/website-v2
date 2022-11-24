@@ -5,6 +5,7 @@ import ThinLegendsButton from '../components/ThinLegendsButton'
 import {Link} from "react-router-dom";
 import amy_pic from '../images/amy-profile-pic.png';
 import pastevents1 from '../images/pastevents1.png';
+import d1lol from '../images/competitive/d1lol.jpg';
 import d1val from '../images/competitive/d1val.png';
 import Footer from '../components/Footer'
 
@@ -33,7 +34,7 @@ function League() {
             <h4 className='header'>LEAGUE OF LEGENDS</h4>
             <h3 className='subheader'> 2022-2023 SEASON DIVISION 1 LOL TEAM</h3>
             <div id="cards">
-                <TeamImg image={pastevents1}></TeamImg>
+                <TeamImg image={d1lol}></TeamImg>
                 {/* <Card icon={amy_pic} name={"AMY JIANG "} role={"| COACH"} major={"MECHANICAL ENGINEERING + EECS"} year={"CLASS OF 2022"} bio={"Favorite Riot Character: answer"}></Card>
                 <div className='card-grid-container'>
                     <Card icon={amy_pic} name={"AMY JIANG "} role={"| COACH"} major={"MECHANICAL ENGINEERING + EECS"} year={"CLASS OF 2022"} bio={"Favorite Riot Character: answer"}></Card>

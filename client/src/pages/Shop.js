@@ -11,6 +11,8 @@ import meepjuice from '../images/shop/meepjuice.jpg'
 import souljuice from '../images/shop/souljuice.jpg'
 import meeppin from '../images/shop/meeppin.jpg'
 import poropin from '../images/shop/poropin.jpg'
+import ruinedking from '../images/shop/ruinedking.png'
+import fa22rgb from '../images/shop/fall22-rgb.png'
 import placeholder3 from '../images/shop/placeholder3.png'
 import Footer from '../components/Footer'
 
@@ -53,8 +55,8 @@ function ShopItem(props) {
 function ShopApparel(props) {
   return (
     <div className="shop-row">
-      <ShopItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
-      <ShopItem image={placeholder} product={"Fall 2022 Hoodie"} regular={"$50.00"} champ={"$35.00"}></ShopItem>
+      <ShopItem image={fa22rgb} product={"Fall 2022 Riot Games at Berkeley Hoodie"} regular={"$50.00"} champ={"$35.00"}></ShopItem>
+      <ShopItem image={ruinedking} product={"Viego Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem>
       {/* <ShopItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></ShopItem> */}
 
     </div>
