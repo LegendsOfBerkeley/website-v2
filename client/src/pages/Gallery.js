@@ -14,11 +14,11 @@ import Footer from '../components/Footer'
 function Header() {
   return (
       <div>
-          <h3 className="gallery-header">Our Community</h3>
-          <p className="gallery-info">
-         {/**<img className="champ-icon" src={championMedal}/> Verified Champions receive a $5 off discount on all merchandise options! */}
+          <h3 className="gallery-header">Photo Gallery</h3>
+          {/** <p className="gallery-info">
+          <img className="champ-icon" src={championMedal}/> Verified Champions receive a $5 off discount on all merchandise options! 
           </p>
-        
+        */}
 
         {/**    
           <Link to="/championship">
@@ -104,8 +104,8 @@ function Gallery() {
       {/* will try to make the buttons underline with the states */}
         <div className="category-buttons-div">
           <button className="category-button" onClick={() => setSocial()}>Social</button>
-          <button className="category-button" onClick={() => setLAN()}>LAN</button>
           <button className="category-button" onClick={() => setTournament()}>Tournament</button>
+          <button className="category-button" onClick={() => setLAN()}>LAN</button>
         </div>
         {category === "Social" && <SocialPhotos/>}
         {category === "LAN" && <LANPhotos/>}
