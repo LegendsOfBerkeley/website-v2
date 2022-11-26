@@ -50,7 +50,7 @@ function PhotoItem(props) {
   )
 }
 
-function InPersonPhotos(props) {
+function SocialPhotos(props) {
   return (
     <div className="shop-row">
       <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
@@ -82,10 +82,10 @@ function TournamentPhotos(props) {
 }
 
 function Gallery() {
-  let [category, setCategory] = useState("In-Person"); 
+  let [category, setCategory] = useState("Social"); 
 
-  function setInPerson() {
-    setCategory("In-Person"); 
+  function setSocial() {
+    setCategory("Social"); 
   }
   
   function setLAN() {
@@ -103,11 +103,11 @@ function Gallery() {
       <div className="category">
       {/* will try to make the buttons underline with the states */}
         <div className="category-buttons-div">
-          <button className="category-button" onClick={() => setInPerson()}>In-Person</button>
+          <button className="category-button" onClick={() => setSocial()}>Social</button>
           <button className="category-button" onClick={() => setLAN()}>LAN</button>
           <button className="category-button" onClick={() => setTournament()}>Tournament</button>
         </div>
-        {category === "In-Person" && <InPersonPhotos/>}
+        {category === "Social" && <SocialPhotos/>}
         {category === "LAN" && <LANPhotos/>}
         {category === "Tournament" && <TournamentPhotos/>}
       </div>
