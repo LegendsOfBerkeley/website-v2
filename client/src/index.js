@@ -11,6 +11,7 @@ import About from './pages/About';
 import Exec from './pages/Exec';
 import Championship from './pages/Championship';
 import FAQ from './pages/FAQ'
+import Gallery from './pages/Gallery'
 
 //fonts
 import './fonts/LEMONMILK-Regular.otf';
@@ -41,6 +42,7 @@ ReactDOM.render(
       <Route path="/exec" element={<Exec />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/FAQ" element={<FAQ />} />
+      <Route path="/gallery" element={<Gallery />} />
     </Routes>
   </Router>,
   document.getElementById('root')
