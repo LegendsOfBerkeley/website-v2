@@ -83,10 +83,10 @@
     transition: transform .2s;
   }
 
-  .image:hover {
+  /* .image:hover {
     cursor: pointer;
     transform: scale(1.25);
-  }
+  } */
 
   .product {
       font-family: Oxygen; 
