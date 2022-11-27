@@ -1,10 +1,8 @@
 import React from 'react'
 import './Gallery.css'
 import Nav from '../components/navbar/Nav'
-import ThinLegendsButton from '../components/ThinLegendsButton'
 import {Link} from "react-router-dom";
 import placeholder from '../images/shop/placeholder.png'
-import championMedal from '../images/icons/champion-medal.png'
 import {useState} from 'react'; 
 import placeholder2 from '../images/shop/placeholder2.png'
 import placeholder3 from '../images/shop/placeholder3.png'
@@ -50,33 +48,79 @@ function PhotoItem(props) {
   )
 }
 
+
 function SocialPhotos(props) {
   return (
-    <div className="shop-row">
-      <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
-      <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
-      <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
-
+    <div className="gallery-container">
+      <div className="photo-row">
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
+      <div className="photo-row">
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
+      <div className="photo-row">
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder} product={"Ruined King x Berkeley Legends Crewneck"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
     </div>
+    
   )
 }
 
 function LANPhotos(props) {
   return (
-    <div className="shop-row">
-      <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
-      <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
-      <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+    <div className="gallery-container">
+      <div className="photo-row">
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
+      <div className="photo-row">
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
+      <div className="photo-row">
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder2} product={"Ruined King x Berkeley Legends Accessory"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
     </div>
   )
 }
 
 function TournamentPhotos(props) {
   return (
-    <div className="shop-row">
-      <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
-      <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
-      <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+    <div className="gallery-container">
+      <div className="photo-row">
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
+      <div className="photo-row">
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
+      <div className="photo-row">
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+        <PhotoItem image={placeholder3} product={"Ruined King x Berkeley Legends Print"} regular={"$35.00"} champ={"$30.00"}></PhotoItem>
+      </div>
     </div>
   )
 }
