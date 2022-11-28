@@ -62,8 +62,7 @@
     display: flex; 
     align-items: center;
     justify-content: center;
-    column-gap: 5vh; 
-    margin-bottom: 5vh;
+    column-gap: 5vh;
   }
 
   .gallery-container {
@@ -86,6 +85,7 @@
     width: 300px; 
     height: 300px; 
     transition: transform .2s;
+    object-fit: scale-down;
   }
 
   .image:hover {
