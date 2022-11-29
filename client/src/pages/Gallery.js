@@ -106,9 +106,13 @@ function TournamentPhotos(props) {
 
 function Gallery() {
   let [category, setCategory] = useState("Social"); 
+  let socialClassName = "category-button";
+  let tourneyClassName = "category-button";
+  let lanClassName = "category-button";
+
 
   function setSocial() {
-    setCategory("Social"); 
+    setCategory("Social");
   }
   
   function setLAN() {
@@ -119,6 +123,18 @@ function Gallery() {
     setCategory("Tournament"); 
   }
 
+  if (category === "Social") {
+    socialClassName += ' active';
+  }
+
+  if (category === "Tournament") {
+    tourneyClassName += ' active';
+  }
+
+  if (category === "LAN") {
+    lanClassName += ' active';
+  }
+
   return (
     <div className="body">
       <Nav/>
@@ -126,9 +142,9 @@ function Gallery() {
       <div className="category">
       {/* will try to make the buttons underline with the states */}
         <div className="category-buttons-div">
-          <button className="category-button" onClick={() => setSocial()}>Champion Socials</button>
-          <button className="category-button" onClick={() => setTournament()}>Tournaments</button>
-          <button className="category-button" onClick={() => setLAN()}>LAN Parties</button>
+          <button className={socialClassName} onClick={() => setSocial()}>Champion Socials</button>
+          <button className={tourneyClassName} onClick={() => setTournament()}>Tournaments</button>
+          <button className={lanClassName} onClick={() => setLAN()}>LAN Parties</button>
         </div>
         {category === "Social" && <SocialPhotos/>}
         {category === "LAN" && <LANPhotos/>}

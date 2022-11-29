@@ -80,6 +80,14 @@
     font-weight: lighter;
 
   }
+
+  .active {
+    background: linear-gradient(180deg, #FFEAA1 14.9%, #CD934E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 28px; 
+  }
   
   /* bandaid solution rn: will try to make the buttons underline with the states */
   .category-button:hover {
