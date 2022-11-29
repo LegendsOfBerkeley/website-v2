@@ -43,20 +43,6 @@
     margin-right: auto;
   }
 
-  .champ-icon {
-    width: 36.94px;
-    height: 43.67px;
-  }
-  .champ-price-icon {
-    width: 27px;
-    height: 31.92px;
-  }
-  .shop-champ-button, .order-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10vh; 
-  }
 
   .photo-row {
     display: flex; 
@@ -72,14 +58,6 @@
   .photo {
       max-width: 300px; 
   }
-  .shop-text {
-    display: flex; 
-    justify-content: space-between;
-  }
-
-  .shop-prices {
-    text-align: right; 
-  }
 
   .image {
     width: 300px; 
@@ -91,30 +69,6 @@
   .image:hover {
     cursor: pointer;
     transform: scale(1.25);
-  }
-
-  .product {
-      font-family: Oxygen; 
-      font-weight: 700; 
-      width: 200px; 
-  }
-  .regular-price, .champ-price{
-    font-family: LEMON MILK; 
-  }
-  .regular-price {
-      color: #B4B4B4;
-  }
-  .champ-price {
-    background: linear-gradient(180deg, #FFEAA1 14.9%, #CD934E 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
-  }
-  .sizes {
-    font-family: LEMON MILK; 
-    padding: 0px; 
-    margin-top: -2vh; 
   }
 
   .category-buttons-div {
