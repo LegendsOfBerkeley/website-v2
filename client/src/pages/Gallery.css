@@ -73,10 +73,9 @@
     font-family: LEMON MILK; 
     font-size: 24px; 
     font-weight: lighter;
-
   }
 
-  .category-button-active {
+  .active {
     background: linear-gradient(180deg, #FFEAA1 14.9%, #CD934E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

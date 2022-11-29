@@ -124,15 +124,15 @@ function Gallery() {
   }
 
   if (category === "Social") {
-    socialClassName += ' category-button-active';
+    socialClassName += ' active';
   }
 
   if (category === "Tournament") {
-    tourneyClassName += ' category-button-active';
+    tourneyClassName += ' active';
   }
 
   if (category === "LAN") {
-    lanClassName += ' category-button-active';
+    lanClassName += ' active';
   }
 
   return (
