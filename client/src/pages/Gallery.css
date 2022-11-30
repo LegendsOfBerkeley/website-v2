@@ -51,7 +51,7 @@
 
   .image {
     width: 300px; 
-    height: 230px; 
+    height: 300px; 
     transition: transform .2s;
     object-fit: scale-down;
   }

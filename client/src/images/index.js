@@ -32,3 +32,21 @@ export const VALAN4 = require('./lanpics/2022_VALAN4.jpg')
 export const BLCS1 = require('./tourneypics/2022_BLCS1.jpg')
 export const BLCS2 = require('./tourneypics/2022_BLCS2.jpg')
 
+//FALL 2022 ARAM TOURNAMENT PICTURES
+export const ARAM1 = require('./tourneypics/2022_ARAM1.jpg')
+export const ARAM2 = require('./tourneypics/2022_ARAM2.jpg')
+export const ARAM3 = require('./tourneypics/2022_ARAM3.jpg')
+export const ARAM4 = require('./tourneypics/2022_ARAM4.jpg')
+
+//FALL 2022 RUNETERRA TOURNAMENT PICTURES
+export const RUNE1 = require('./tourneypics/2022_RUNE1.jpg')
+
+//FALL 2022 HALLOWEEN LAN PICTURES
+export const HALLOW1 = require('./lanpics/2022_HALLOW1.jpg')
+export const HALLOW2 = require('./lanpics/2022_HALLOW2.jpg')
+export const HALLOW3 = require('./lanpics/2022_HALLOW3.jpg')
+
+//FALL 2022 FALL LAN PICTURES
+export const FALLAN1 = require('./lanpics/2022_FALLAN1.jpg')
+export const FALLAN2 = require('./lanpics/2022_FALLAN2.jpg')
+

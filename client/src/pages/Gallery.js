@@ -7,7 +7,9 @@ import placeholder3 from '../images/shop/placeholder3.png'
 import Footer from '../components/Footer'
 import { FFN1, GTG1, GTG2, ICE1, ICE2, ICE3, ICE4, ICE5, 
   SAKURA1, SAKURA2, SAKURA3, BANQ1, BANQ2, BANQ3, 
-  VALAN1, VALAN2, VALAN3, VALAN4, BLCS1, BLCS2 } from '../images';
+  VALAN1, VALAN2, VALAN3, VALAN4, BLCS1, BLCS2, 
+  ARAM1, ARAM2, ARAM3, ARAM4, RUNE1, 
+  HALLOW1, HALLOW2, HALLOW3, FALLAN1, FALLAN2 } from '../images';
 
 function Header() {
   return (
@@ -58,13 +60,13 @@ function LANPhotos(props) {
   return (
     <div className="gallery-container">
       <div className="photo-row">
-        <PhotoItem image={FFN1} ></PhotoItem>
-        <PhotoItem image={placeholder2}></PhotoItem>
-        <PhotoItem image={placeholder2}></PhotoItem>
-        <PhotoItem image={placeholder2}></PhotoItem>
+        <PhotoItem image={FALLAN1} ></PhotoItem>
+        <PhotoItem image={FALLAN2}></PhotoItem>
+        <PhotoItem image={HALLOW1}></PhotoItem>
+        <PhotoItem image={HALLOW2}></PhotoItem>
       </div>
       <div className="photo-row">
-        <PhotoItem image={placeholder2}></PhotoItem>
+        <PhotoItem image={HALLOW3}></PhotoItem>
         <PhotoItem image={placeholder2}></PhotoItem>
         <PhotoItem image={placeholder2}></PhotoItem>
         <PhotoItem image={placeholder2}></PhotoItem>
@@ -83,13 +85,13 @@ function TournamentPhotos(props) {
   return (
     <div className="gallery-container">
       <div className="photo-row">
-        <PhotoItem image={placeholder3}></PhotoItem>
-        <PhotoItem image={placeholder3}></PhotoItem>
-        <PhotoItem image={placeholder3}></PhotoItem>
-        <PhotoItem image={placeholder3}></PhotoItem>
+        <PhotoItem image={ARAM1}></PhotoItem>
+        <PhotoItem image={ARAM2}></PhotoItem>
+        <PhotoItem image={ARAM3}></PhotoItem>
+        <PhotoItem image={ARAM4}></PhotoItem>
       </div>
       <div className="photo-row">
-        <PhotoItem image={placeholder3}></PhotoItem>
+        <PhotoItem image={RUNE1}></PhotoItem>
         <PhotoItem image={placeholder3}></PhotoItem>
         <PhotoItem image={placeholder3}></PhotoItem>
         <PhotoItem image={placeholder3}></PhotoItem>
