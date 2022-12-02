@@ -6,10 +6,11 @@ import placeholder2 from '../images/shop/placeholder2.png'
 import placeholder3 from '../images/shop/placeholder3.png'
 import Footer from '../components/Footer'
 import { FFN1, GTG1, GTG2, ICE1, ICE2, ICE3, ICE4, ICE5, 
-  SAKURA1, SAKURA2, SAKURA3, BANQ1, BANQ2, BANQ3, 
-  VALAN1, VALAN2, VALAN3, VALAN4, BLCS1, BLCS2, 
-  ARAM1, ARAM2, ARAM3, ARAM4, RUNE1, 
-  HALLOW1, HALLOW2, HALLOW3, FALLAN1, FALLAN2 } from '../images';
+  SAKURA1, SAKURA2, SAKURA3, BANQ1, BANQ2, BANQ3, BANQ4,
+  VALAN1, VALAN2, VALAN3, VALAN4, VALAN5, BLCS1, BLCS2, 
+  ARAM1, ARAM2, ARAM3, ARAM4, ARAM5, ARAM6, ARAM7, RUNE1, 
+  HALLOW1, HALLOW2, HALLOW3, HALLOW4, FALLAN1, FALLAN2, TANDEM1, TANDEM2,
+  SPLAN1 } from '../images';
 
 function Header() {
   return (
@@ -34,7 +35,7 @@ function SocialPhotos(props) {
   return (
     <div className="gallery-container">
       <div className="photo-row">
-        <PhotoItem image={FFN1}></PhotoItem>
+        <PhotoItem image={BANQ4}></PhotoItem>
         <PhotoItem image={GTG1}></PhotoItem>
         <PhotoItem image={GTG2}></PhotoItem>
         <PhotoItem image={ICE1}></PhotoItem>
@@ -67,15 +68,15 @@ function LANPhotos(props) {
       </div>
       <div className="photo-row">
         <PhotoItem image={HALLOW3}></PhotoItem>
-        <PhotoItem image={placeholder2}></PhotoItem>
-        <PhotoItem image={placeholder2}></PhotoItem>
-        <PhotoItem image={placeholder2}></PhotoItem>
+        <PhotoItem image={HALLOW4}></PhotoItem>
+        <PhotoItem image={SPLAN1}></PhotoItem>
+        <PhotoItem image={VALAN1}></PhotoItem>
       </div>
       <div className="photo-row">
-        <PhotoItem image={VALAN1}></PhotoItem>
         <PhotoItem image={VALAN2}></PhotoItem>
         <PhotoItem image={VALAN3}></PhotoItem>
         <PhotoItem image={VALAN4}></PhotoItem>
+        <PhotoItem image={VALAN5}></PhotoItem>
       </div>
     </div>
   )
@@ -92,13 +93,13 @@ function TournamentPhotos(props) {
       </div>
       <div className="photo-row">
         <PhotoItem image={RUNE1}></PhotoItem>
-        <PhotoItem image={placeholder3}></PhotoItem>
-        <PhotoItem image={placeholder3}></PhotoItem>
-        <PhotoItem image={placeholder3}></PhotoItem>
+        <PhotoItem image={ARAM5}></PhotoItem>
+        <PhotoItem image={ARAM6}></PhotoItem>
+        <PhotoItem image={ARAM7}></PhotoItem>
       </div>
       <div className="photo-row">
-        <PhotoItem image={placeholder3}></PhotoItem>
-        <PhotoItem image={placeholder3}></PhotoItem>
+        <PhotoItem image={TANDEM1}></PhotoItem>
+        <PhotoItem image={TANDEM2}></PhotoItem>
         <PhotoItem image={BLCS1}></PhotoItem>
         <PhotoItem image={BLCS2}></PhotoItem>
       </div>

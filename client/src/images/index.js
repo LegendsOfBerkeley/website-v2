@@ -21,12 +21,14 @@ export const SAKURA3 = require('./socialpics/2022_SAKURA3.jpg')
 export const BANQ1 = require('./socialpics/2022_SPBANQ1.jpg')
 export const BANQ2 = require('./socialpics/2022_SPBANQ2.jpg')
 export const BANQ3 = require('./socialpics/2022_SPBANQ3.jpg')
+export const BANQ4 = require('./socialpics/2022_SPBANQ4.jpg')
 
 //SPRING 2022 VALANTINES PICTURES
 export const VALAN1 = require('./lanpics/2022_VALAN1.jpg')
 export const VALAN2 = require('./lanpics/2022_VALAN2.jpg')
 export const VALAN3 = require('./lanpics/2022_VALAN3.jpg')
 export const VALAN4 = require('./lanpics/2022_VALAN4.jpg')
+export const VALAN5 = require('./lanpics/2022_VALAN5.jpg')
 
 //SPRING 2022 BLCS PICTURES
 export const BLCS1 = require('./tourneypics/2022_BLCS1.jpg')
@@ -38,6 +40,13 @@ export const ARAM2 = require('./tourneypics/2022_ARAM2.jpg')
 export const ARAM3 = require('./tourneypics/2022_ARAM3.jpg')
 export const ARAM4 = require('./tourneypics/2022_ARAM4.jpg')
 
+//FALL 2020 ARAM TOURNAMENT PICTURES
+export const ARAM5 = require('./tourneypics/2020_ARAM1.jpg')
+export const ARAM6 = require('./tourneypics/2020_ARAM2.jpg')
+
+//FALL 2018 ARAM TOURNAMENT PICTURES
+export const ARAM7 = require('./tourneypics/2018_ARAM1.jpg')
+
 //FALL 2022 RUNETERRA TOURNAMENT PICTURES
 export const RUNE1 = require('./tourneypics/2022_RUNE1.jpg')
 
@@ -46,7 +55,16 @@ export const HALLOW1 = require('./lanpics/2022_HALLOW1.jpg')
 export const HALLOW2 = require('./lanpics/2022_HALLOW2.jpg')
 export const HALLOW3 = require('./lanpics/2022_HALLOW3.jpg')
 
+//FALL 2019 HALLOWEEN LAN PICTURES
+export const HALLOW4 = require('./lanpics/2019_HALLOW1.jpg')
+
 //FALL 2022 FALL LAN PICTURES
 export const FALLAN1 = require('./lanpics/2022_FALLAN1.jpg')
 export const FALLAN2 = require('./lanpics/2022_FALLAN2.jpg')
 
+//FALL 2019 TANDEM TOURNAMENT PICTURES
+export const TANDEM1 = require('./tourneypics/2019_TANDEM1.jpg')
+export const TANDEM2 = require('./tourneypics/2019_TANDEM2.jpg')
+
+//SPRING 2020 SPRING LAN PICTURES
+export const SPLAN1 = require('./lanpics/2020_SPLAN1.jpg')
