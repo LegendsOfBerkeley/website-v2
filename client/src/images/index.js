@@ -66,5 +66,16 @@ export const FALLAN2 = require('./lanpics/2022_FALLAN2.jpg')
 export const TANDEM1 = require('./tourneypics/2019_TANDEM1.jpg')
 export const TANDEM2 = require('./tourneypics/2019_TANDEM2.jpg')
 
+//FALL 2022 TANDEM TOURNAMENT PICTURES
+export const TANDEM3 = require('./tourneypics/2022_TANDEM1.jpg')
+
 //SPRING 2020 SPRING LAN PICTURES
 export const SPLAN1 = require('./lanpics/2020_SPLAN1.jpg')
+
+//FALL 2019 TOURNAMENT PICTURES
+export const TOURNEY1 = require('./tourneypics/2019_TOURNEY1.jpg')
+export const TOURNEY2 = require('./tourneypics/2019_TOURNEY2.jpg')
+
+//SPRING 2019 TOURNAMENT PICTURES
+export const TOURNEY3 = require('./tourneypics/2019_SPRTOURNEY1.jpg')
+

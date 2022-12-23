@@ -9,7 +9,8 @@ import { FFN1, GTG1, GTG2, ICE1, ICE2, ICE3, ICE4, ICE5,
   SAKURA1, SAKURA2, SAKURA3, BANQ1, BANQ2, BANQ3, BANQ4,
   VALAN1, VALAN2, VALAN3, VALAN4, VALAN5, BLCS1, BLCS2, 
   ARAM1, ARAM2, ARAM3, ARAM4, ARAM5, ARAM6, ARAM7, RUNE1, 
-  HALLOW1, HALLOW2, HALLOW3, HALLOW4, FALLAN1, FALLAN2, TANDEM1, TANDEM2,
+  HALLOW1, HALLOW2, HALLOW3, HALLOW4, FALLAN1, FALLAN2, 
+  TANDEM1, TANDEM2, TANDEM3, TOURNEY1, TOURNEY2, TOURNEY3,
   SPLAN1 } from '../images';
 
 function Header() {
@@ -102,6 +103,12 @@ function TournamentPhotos(props) {
         <PhotoItem image={TANDEM2}></PhotoItem>
         <PhotoItem image={BLCS1}></PhotoItem>
         <PhotoItem image={BLCS2}></PhotoItem>
+      </div>
+      <div className="photo-row">
+        <PhotoItem image={TANDEM3}></PhotoItem>
+        <PhotoItem image={TOURNEY1}></PhotoItem>
+        <PhotoItem image={TOURNEY2}></PhotoItem>
+        <PhotoItem image={TOURNEY3}></PhotoItem>
       </div>
     </div>
   )
