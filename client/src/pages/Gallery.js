@@ -6,12 +6,14 @@ import placeholder2 from '../images/shop/placeholder2.png'
 import placeholder3 from '../images/shop/placeholder3.png'
 import Footer from '../components/Footer'
 import { FFN1, GTG1, GTG2, ICE1, ICE2, ICE3, ICE4, ICE5, 
-  SAKURA1, SAKURA2, SAKURA3, BANQ1, BANQ2, BANQ3, BANQ4,
+  SAKURA1, SAKURA2, SAKURA3, 
+  BANQ1, BANQ2, BANQ3, BANQ4, BANQ5, BANQ6,
   VALAN1, VALAN2, VALAN3, VALAN4, VALAN5, BLCS1, BLCS2, 
   ARAM1, ARAM2, ARAM3, ARAM4, ARAM5, ARAM6, ARAM7, RUNE1, 
-  HALLOW1, HALLOW2, HALLOW3, HALLOW4, FALLAN1, FALLAN2, 
+  HALLOW1, HALLOW2, HALLOW3, HALLOW4, HALLOW5, HALLOW6, HALLOW7, HALLOW8,
+  FALLAN1, FALLAN2, 
   TANDEM1, TANDEM2, TANDEM3, TOURNEY1, TOURNEY2, TOURNEY3,
-  SPLAN1 } from '../images';
+  SPLAN1, GAME1, GAME2} from '../images';
 
 function Header() {
   return (
@@ -53,6 +55,12 @@ function SocialPhotos(props) {
         <PhotoItem image={BANQ1}></PhotoItem>
         <PhotoItem image={BANQ2}></PhotoItem>
       </div>
+      <div className="photo-row">
+        <PhotoItem image={GAME1}></PhotoItem>
+        <PhotoItem image={GAME2}></PhotoItem>
+        <PhotoItem image={BANQ5}></PhotoItem>
+        <PhotoItem image={BANQ6}></PhotoItem>
+      </div>
     </div>
     
   )
@@ -66,6 +74,12 @@ function LANPhotos(props) {
         <PhotoItem image={FALLAN2}></PhotoItem>
         <PhotoItem image={HALLOW1}></PhotoItem>
         <PhotoItem image={HALLOW2}></PhotoItem>
+      </div>
+      <div className="photo-row">
+        <PhotoItem image={HALLOW5} ></PhotoItem>
+        <PhotoItem image={HALLOW8}></PhotoItem>
+        <PhotoItem image={HALLOW7}></PhotoItem>
+        <PhotoItem image={HALLOW6}></PhotoItem>
       </div>
       <div className="photo-row">
         <PhotoItem image={HALLOW3}></PhotoItem>

@@ -12,6 +12,10 @@ export const ICE3 = require('./socialpics/2022_ICE3.jpg')
 export const ICE4 = require('./socialpics/2022_ICE4.jpg')
 export const ICE5 = require('./socialpics/2022_ICEgroup.jpg')
 
+//FALL 2022 GAME SHOW NIGHT PICTURES
+export const GAME1 = require('./socialpics/2022_GAME1.jpg')
+export const GAME2 = require('./socialpics/2022_GAME2.jpg')
+
 //SPRING 2022 SAKURA FESTIVAL PICTURES
 export const SAKURA1 = require('./socialpics/2022_SAKURA1.jpg')
 export const SAKURA2 = require('./socialpics/2022_SAKURA2.jpg')
@@ -22,6 +26,10 @@ export const BANQ1 = require('./socialpics/2022_SPBANQ1.jpg')
 export const BANQ2 = require('./socialpics/2022_SPBANQ2.jpg')
 export const BANQ3 = require('./socialpics/2022_SPBANQ3.jpg')
 export const BANQ4 = require('./socialpics/2022_SPBANQ4.jpg')
+
+//FALL 2022 FALL BANQUET PICTURES
+export const BANQ5 = require('./socialpics/2022_FABANQ1.jpg')
+export const BANQ6 = require('./socialpics/2022_FABANQ2.jpg')
 
 //SPRING 2022 VALANTINES PICTURES
 export const VALAN1 = require('./lanpics/2022_VALAN1.jpg')
@@ -54,6 +62,10 @@ export const RUNE1 = require('./tourneypics/2022_RUNE1.jpg')
 export const HALLOW1 = require('./lanpics/2022_HALLOW1.jpg')
 export const HALLOW2 = require('./lanpics/2022_HALLOW2.jpg')
 export const HALLOW3 = require('./lanpics/2022_HALLOW3.jpg')
+export const HALLOW5 = require('./lanpics/2022_HALLOW4.jpg')
+export const HALLOW6 = require('./lanpics/2022_HALLOW5.jpg')
+export const HALLOW7 = require('./lanpics/2022_HALLOW6.jpg')
+export const HALLOW8 = require('./lanpics/2022_HALLOW7.jpg')
 
 //FALL 2019 HALLOWEEN LAN PICTURES
 export const HALLOW4 = require('./lanpics/2019_HALLOW1.jpg')
@@ -78,4 +90,6 @@ export const TOURNEY2 = require('./tourneypics/2019_TOURNEY2.jpg')
 
 //SPRING 2019 TOURNAMENT PICTURES
 export const TOURNEY3 = require('./tourneypics/2019_SPRTOURNEY1.jpg')
+
+
 
