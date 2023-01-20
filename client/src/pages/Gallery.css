@@ -38,26 +38,28 @@
     display: flex; 
     align-items: center;
     justify-content: center;
-    column-gap: 5vh;
+    column-gap: 8vh;
+    row-gap: 20vh;
   }
 
   .gallery-container {
-    column-gap: 10vh;
+    column-gap: 0vh;
   }
 
   .photo {
-      max-width: 300px; 
+      max-width: 350px; 
+      
   }
 
   .image {
-    width: 400px; 
-    height: 400px; 
+    width: 375px; 
+    height: 300px; 
     transition: transform .2s;
     object-fit: scale-down;
   }
 
   .image:hover {
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
 
   .category-buttons-div {
