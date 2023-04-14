@@ -51,38 +51,38 @@ const Exec = () => {
       <div className="body">
         <h3 className="about-header">EXECUTIVE BOARD</h3>
         <div class="container">
-        <button class="button" data-tip data-for="amy">
+      <button class="button" data-tip data-for="ryan">
+          <Card icon={images["ryancheng.png"]} name={"Ryan Cheng"} alias={"pingu51472"} position={"President"} bio={"Economics, Class of 2023"}></Card>
+      </button>
+      <button class="button" data-tip data-for="amy">
           <Card icon={images["amyjiang.png"]} name={"Amy Jiang"} alias={"FYSIAE"} position={"President"} bio={"Mechanical Engineering + EECS, Class of 2022"}></Card>
       </button>
-      <button class="button" data-tip data-for="ryan">
-          <Card icon={images["ryancheng.png"]} name={"Ryan Cheng"} alias={"pingu51472"} position={"Presidential Intern, Tournament Operations, Sponsorship"} bio={"Economics, Class of 2023"}></Card>
-      </button>
-      <button class="button" data-tip data-for="victor">
-          <Card icon={images["victorzhou.png"]} name={"Victor Zhou"} alias={"zhou shuai"} position={"Tournament Operations, community liason, sponsorship, historian"} bio={"Computer Science, Class of 2024"}></Card>
+      <button class="button" data-tip data-for="hari">
+          <Card icon={images["victorzhou.png"]} name={"Hari Ganeshan"} alias={"WarRaptors"} position={"Tournament Operations and Marketing Intern"} bio={"Economics & Public Health, Class of 2024"}></Card>
       </button>
       <button class="button" data-tip data-for="jacob">
-        <Card icon={images["jacobknudson.png"]} name={"Jacob Knudson"} alias={"woopah"} position={"Tournament Operations, marketing, sponsorship"} bio={"Computer Science, Class of 2025"}></Card>
+        <Card icon={images["jacobknudson.png"]} name={"Jacob Knudson"} alias={"woopah"} position={"Marketing and Outreach Lead"} bio={"Computer Science, Class of 2025"}></Card>
       </button>
       <button class="button" data-tip data-for="angelina">
-        <Card icon={images["angelinawu.png"]} name={"Angelina Wu"} alias={"koizumaru"} position={"design"} bio={"Biomedical Engineering, Class of 2024"}></Card>
+        <Card icon={images["angelinawu.png"]} name={"Angelina Wu"} alias={"koizumaru"} position={"Design"} bio={"Biomedical Engineering, Class of 2024"}></Card>
       </button>
-      <button class="button" data-tip data-for="raymond">
-        <Card icon={images["raymondliu.png"]} name={"Raymond Liu"} alias={"raay"} position={"Design"} bio={"Art Practice, Class of 2023"}></Card>
+      <button class="button" data-tip data-for="lauren">
+        <Card icon={images["raymondliu.png"]} name={"Lauren Kim"} alias={"1aurein"} position={"Design Intern"} bio={"Art Practice, Class of 2026"}></Card>
       </button>
-      <button class="button" data-tip data-for="maddy">
-        <Card icon={images["maddyting.png"]} name={"Maddy Ting"} alias={"ARDENTIIA"} position={"Marketing, Broadcast"} bio={"Business Administration, Class of 2025"}></Card>
+      <button class="button" data-tip data-for="phoebe">
+        <Card icon={images["maddyting.png"]} name={"Phoebe Lyu"} alias={"Phoebe7Kiwi"} position={"Tournament Operations Intern"} bio={"Computer Science, Class of 2026"}></Card>
       </button>
       <button class="button" data-tip data-for="christopher">  
-        <Card icon={images["christopherthomas.png"]} name={"Christopher Thomas"} alias={"lucitic"} position={"COMMUNITY LIAISON"} bio={"Cognitive Science and Math, Class of 2023"}></Card>
+        <Card icon={images["christopherthomas.png"]} name={"Christopher Thomas"} alias={"lucitic"} position={"Championship"} bio={"Cognitive Science and Math, Class of 2023"}></Card>
       </button>
-      <button class="button" data-tip data-for="daniel">
-        <Card icon={images["danielzhao.png"]} name={"Daniel Zhao"} alias={"ASTRAD"} position={"broadcast, tournament operations, sponsorship"} bio={"Computer Science, Class of 2024"}></Card>
+      <button class="button" data-tip data-for="ashley">
+        <Card icon={images["danielzhao.png"]} name={"Ashley Watanabe"} alias={"wontonabe"} position={"Historian and Championship Intern"} bio={"Economics, Class of 2026"}></Card>
       </button>
       <button class="button" data-tip data-for="andy">
         <Card icon={images["andybui.png"]} name={"Andy Bui"} alias={"T4 NAMIKAZE"} position={"historian and marketing intern"} bio={"Media Studies, Class of 2025"}></Card>
       </button>
       <button class="button" data-tip data-for="therese">
-        <Card icon={images["thereserico.png"]} name={"Therese Rico"} alias={"PURPLE LILAC12"} position={"COMMUNITY LIAISON INTERN"} bio={"Business Administration, Class of 2024"}></Card>
+        <Card icon={images["thereserico.png"]} name={"Therese Rico"} alias={"PURPLE LILAC12"} position={"Tournament Operations and Championship Lead"} bio={"Business Administration, Class of 2024"}></Card>
       </button>
         </div>
         <ReactTooltip className="tooltip" id="amy" place="right" effect="solid">
@@ -97,10 +97,10 @@ const Exec = () => {
         interests={"I like to do research on the stock market, learn random stuff, and try to improve my financial independence knowledge (like how to increase credit score, etc)"}></Info>
       </ReactTooltip>
 
-      <ReactTooltip className="tooltip" id="victor" effect="solid">
-        <Info bioName={"Victor Zhou"} favchar={"https://www.youtube.com/watch?v=3aUa_xVjf-w | https://bit.ly/2XFRyxU"}
-        why={"I'm unfortunately a League addict so I find myself gaming for around 6 hours a day on average, and since I was playing so much anyway, I decided to look into Berkeley Legends to find fellow Riot Games enjoyers. The club has an amazing and welcoming community, and the members are just as dank as you would expect the average League of Legends/Valorant enjoyer to be, so I quickly came to love this group of people!"}
-        interests={"I do not like League, but I enjoy the concept of playing League. I also love playing other games, reading/watching anything mystery-related (pleasepleaseplease read/watch Detective Conan), singing, doodling, spending time with friends, and, above all, waiting till the due date to begin on projects and psets! (helphelphelphelphelphelphelphelphe"}></Info>
+      <ReactTooltip className="tooltip" id="hari" effect="solid">
+        <Info bioName={"Hari Ganeshan"} favchar={"Vladimir"}
+        why={"I enjoy LoL, TFT, LoR, and even Val so getting to meet people with similar interests is really fun for me. Hopefully I can bring some exciting ideas to make this club enjoyable for everyone involved :)"}
+        interests={"I really enjoy listening to music, grabbing food, and anything with the company of friends. I also love doing anything active ranging from going to the gym, rock climbing, and ultimate frisbee. I'm a pretty spontaneous and outgoing person and would love to get to know y'all this semester."}></Info>
       </ReactTooltip>
 
       <ReactTooltip className="tooltip" id="jacob" effect="solid">
@@ -115,16 +115,16 @@ const Exec = () => {
         interests={"Baking, eating, building in The Sims, flaming Ryan, eating"}></Info>
       </ReactTooltip>
 
-      <ReactTooltip className="tooltip" id="raymond" effect="solid">
-        <Info bioName={"Raymond Liu"} favchar={"I've played league for so long that I've mained pretty much every lane and champ but I'm equally mediocre on all of them :( also a jett enjoyer"}
-        why={"League has always been a part of my life and joining the club was a no brainer for me. As soon as I learned about it I joined the discord and applied to be an intern and here I am. The people and the community are awesome and it's just a great time."}
-        interests={"I do a lot of art and design things. I love doing anything creative. Finding new and listening to new music is always fun. naps."}></Info>
+      <ReactTooltip className="tooltip" id="lauren" effect="solid">
+        <Info bioName={"Lauren Kim"} favchar={"Reyna <3"}
+        why={"I joined Berkeley Legends to meet others who enjoy working behind the scenes on events for games they love! I love that I can be a part of this exciting community on campus with other passionate students."}
+        interests={"I've done a lot of visual arts during my high school years, so I enjoy the traditional aspect of art as well as graphic arts. I also love sweets and finding new food spots to be addicted to."}></Info>
       </ReactTooltip>
 
-      <ReactTooltip className="tooltip" id="maddy" effect="solid">
-        <Info bioName={"Maddy Ting"} favchar={"Seraphine, Rell, Kayle"}
-        why={"I started playing League in January 2021 (yes I'm a baby compared to all you early season gamers) so when I found out about the club through the freshman Discord, I decided to check it out. Turns out it was a great decision because I've met a bunch of awesome friends here that share my passion (addiction) and a wonderful community too!"}
-        interests={"I enjoy drawing and writing fanfiction (League or P5 are my favorites to talk about) when I'm not playing games, chatting with friends, or reciting random movie or game quotes from memory. I also like designing things so if I'm AFK then I'm probably rearranging pixels in either Photoshop or Canva while listening to the same songs on hour-long loops (recently it's been the Arcane playlist but I enjoy kpop too)."}></Info>
+      <ReactTooltip className="tooltip" id="phoebe" effect="solid">
+        <Info bioName={"Phoebe Lyu"} favchar={"Zoe"}
+        why={"I love League of Legends and other games developed by Riot Games. I was excited when I found the Berkeley Legends club. It is a great opportunity to connect with people that love video games as well."}
+        interests={"Snowboarding, playing tennis, arranging music, playing the piano, and painting"}></Info>
       </ReactTooltip>
 
       <ReactTooltip className="tooltip" id="christopher" effect="solid">
@@ -133,10 +133,10 @@ const Exec = () => {
         interests={"Table Tennis, Drawing, Random Hobbies"}></Info>
       </ReactTooltip>
 
-      <ReactTooltip className="tooltip" id="daniel" effect="solid">
-        <Info bioName={"Daniel Zhao"} favchar={"Gragas"}
-        why={"to have fun and meet people :D"}
-        interests={"eat food, make games, play cello, party"}></Info>
+      <ReactTooltip className="tooltip" id="ashley" effect="solid">
+        <Info bioName={"Ashley Watanabe"} favchar={"Omen"}
+        why={"I love being able to hang out and interact with such a positive gaming community, and Berkeley Legends has allowed me to meet so many people! Also, I have a crippling VALORANT addiction, and it's fun to help out in a community that suits my interests!"}
+        interests={"Besides Riot Games I enjoy going to the great wide world of the outdoors, hiking and running mostly(touching grass I know), consuming unholy amounts of boba, and trying to keep my growing colony of plants alive :)"}></Info>
       </ReactTooltip>
 
       <ReactTooltip className="tooltip" id="andy" effect="solid">
