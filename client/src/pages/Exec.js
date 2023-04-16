@@ -55,7 +55,7 @@ const Exec = () => {
           <Card icon={images["ryancheng.png"]} name={"Ryan Cheng"} alias={"pingu51472"} position={"President"} bio={"Economics, Class of 2023"}></Card>
       </button>
       <button class="button" data-tip data-for="gilberto">
-          <Card icon={images["gilbertodiaz.png"]} name={"Gilberto Diaz"} alias={"gilito345"} position={"Presidential Intern and Broadcast lead"} bio={"EECS, Class of 2024"}></Card>
+          <Card icon={images["gilbertodiaz.png"]} name={"Gilberto Diaz"} alias={"gilito345"} position={"Broadcast Lead and Presidential Intern"} bio={"EECS, Class of 2024"}></Card>
       </button>
       <button class="button" data-tip data-for="therese">
         <Card icon={images["thereserico.png"]} name={"Therese Rico"} alias={"PURPLE LILAC12"} position={"Tournament Operations and Championship Lead"} bio={"Business Administration, Class of 2024"}></Card>
@@ -67,7 +67,7 @@ const Exec = () => {
         <Card icon={images["sylviachen.png"]} name={"Sylvia Chen"} alias={"DeathbyYogurt"} position={"Design Lead"} bio={"Computer Science, Class of 2024"}></Card>
       </button>
       <button class="button" data-tip data-for="angelina">
-        <Card icon={images["angelinawu.png"]} name={"Angelina Wu"} alias={"koizumaru"} position={"Internal Ops Lead and Design"} bio={"Cognitive Science, Class of 2024"}></Card>
+        <Card icon={images["angelinawu.png"]} name={"Angelina Wu"} alias={"koizumaru"} position={"Internal Lead and Design"} bio={"Cognitive Science, Class of 2024"}></Card>
       </button>
       <button class="button" data-tip data-for="eric">
         <Card icon={images["ericyang.png"]} name={"Eric Yang"} alias={"Eyrr"} position={"Historian Lead"} bio={"Computer Science, Class of 2025"}></Card>
