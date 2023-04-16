@@ -88,7 +88,7 @@ const Exec = () => {
         <Card icon={images["ashleywatanabe.png"]} name={"Ashley Watanabe"} alias={"wontonabe"} position={"Historian and Championship Intern"} bio={"Economics, Class of 2026"}></Card>
       </button>
       <button class="button" data-tip data-for="ivy">
-        <Card icon={images["ivyliu.png"]} name={"Ivy Liu"} alias={"snowyfern"} position={"Design Intern"} bio={"Computer Science, Class of 2026"}></Card>
+        <Card icon={images["ivyliu.png"]} name={"Ivy Liu"} alias={"snowyfern"} position={"Design and Marketing Intern"} bio={"Computer Science, Class of 2026"}></Card>
       </button>
         </div>
 
