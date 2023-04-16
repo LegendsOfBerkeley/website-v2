@@ -76,19 +76,19 @@ const Exec = () => {
         <Card icon={images["christopherthomas.png"]} name={"Christopher Thomas"} alias={"lucitic"} position={"Championship"} bio={"Cognitive Science and Math, Class of 2023"}></Card>
       </button>
       <button class="button" data-tip data-for="ashley">
-        <Card icon={images["danielzhao.png"]} name={"Ashley Watanabe"} alias={"wontonabe"} position={"Historian and Championship Intern"} bio={"Economics, Class of 2026"}></Card>
+        <Card icon={images["ashleywatanabe.png"]} name={"Ashley Watanabe"} alias={"wontonabe"} position={"Historian and Championship Intern"} bio={"Economics, Class of 2026"}></Card>
       </button>
       <button class="button" data-tip data-for="eric">
         <Card icon={images["andybui.png"]} name={"Eric Yang"} alias={"Eyrr"} position={"Historian Lead"} bio={"Computer Science, Class of 2025"}></Card>
       </button>
       <button class="button" data-tip data-for="therese">
-        <Card icon={images["thereserico.png"]} name={"Therese Rico"} alias={"PURPLE LILAC12"} position={"Tournament Operations and Championship Lead"} bio={"Business Administration, Class of 2024"}></Card>
+        <Card icon={images["ryancheng.png"]} name={"Therese Rico"} alias={"PURPLE LILAC12"} position={"Tournament Operations and Championship Lead"} bio={"Business Administration, Class of 2024"}></Card>
       </button>
       <button class="button" data-tip data-for="sylvia">
-        <Card icon={images["thereserico.png"]} name={"Sylvia Chen"} alias={"DeathbyYogurt"} position={"Design Lead"} bio={"Computer Science, Class of 2024"}></Card>
+        <Card icon={images["sylviachen.jpg"]} name={"Sylvia Chen"} alias={"DeathbyYogurt"} position={"Design Lead"} bio={"Computer Science, Class of 2024"}></Card>
       </button>
       <button class="button" data-tip data-for="ivy">
-        <Card icon={images["thereserico.png"]} name={"Ivy Liu"} alias={"snowyfern"} position={"Design Intern"} bio={"Computer Science, Class of 2026"}></Card>
+        <Card icon={images["thereserico.jpg"]} name={"Ivy Liu"} alias={"snowyfern"} position={"Design Intern"} bio={"Computer Science, Class of 2026"}></Card>
       </button>
         </div>
         <ReactTooltip className="tooltip" id="gilberto" place="right" effect="solid">
