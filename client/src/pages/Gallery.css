@@ -38,7 +38,7 @@
     display: flex; 
     align-items: center;
     justify-content: center;
-    column-gap: 8vh;
+    column-gap: 12vh;
     row-gap: 20vh;
   }
 
@@ -47,7 +47,7 @@
   }
 
   .photo {
-      max-width: 350px; 
+      max-width: 275px; 
       
   }
 
@@ -59,7 +59,7 @@
   }
 
   .image:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
   }
 
   .category-buttons-div {

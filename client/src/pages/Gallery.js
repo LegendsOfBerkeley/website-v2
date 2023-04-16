@@ -15,6 +15,9 @@ import { FFN1, GTG1, GTG2, ICE1, ICE2, ICE3, ICE4, ICE5,
   TANDEM1, TANDEM2, TANDEM3, TOURNEY1, TOURNEY2, TOURNEY3,
   SPLAN1, GAME1, GAME2} from '../images';
 
+
+
+
 function Header() {
   return (
       <div>
@@ -30,6 +33,11 @@ function PhotoItem(props) {
     </div>
   )
 }
+
+function getImagesPerRow(innerWidth) {
+  if(innerWidth >= 1000) return 
+}
+
 
 
 //Possible issues with lack of image compression causing image to take a while to load
@@ -129,11 +137,27 @@ function TournamentPhotos(props) {
 }
 
 function Gallery() {
+  const [windowSize, setWindowSize] = React.useState({ 
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
   let [category, setCategory] = useState("Social"); 
   let socialClassName = "category-button";
   let tourneyClassName = "category-button";
   let lanClassName = "category-button";
 
+  React.useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    
+    }
+    window.addEventListener('resize', handleResize)
+  })
+
+  getImagesPerRow()
 
   function setSocial() {
     setCategory("Social");
