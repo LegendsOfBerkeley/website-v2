@@ -92,7 +92,7 @@ const Exec = () => {
       </button>
         </div>
 
-        <ReactTooltip className="tooltip" id="ryan" effect="solid">
+      <ReactTooltip className="tooltip" id="ryan" effect="solid">
         <Info bioName={"Ryan Cheng"} favchar={"rn it's Caitlyn"}
         why={"Back in high school, I hosted League and Overwatch tournaments as a part of my company. After that era ended, I wanted to continue running these tournaments in college, so I joined BL. It also helps that I've played league for a better half of the last decade."}
         interests={"I like to do research on the stock market, learn random stuff, and try to improve my financial independence knowledge (like how to increase credit score, etc)"}></Info>
