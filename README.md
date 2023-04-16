@@ -1,6 +1,7 @@
-# innod-berkeleylegends
-innoD web team x berkeley legends
+Personal fork of Berkeley Legends page
 
-Things from Jared:
-    - I added router so it is convenient between switching through pages instead of changing index.js, for pages such as play for cal and execs we can discuss where that would fit in next meeting.
-    - 
+I'm currently working on:
+- Exec Page Updates
+- Recent Events for Home Page
+- Better Element Relativity to Screen Size
+- Possible Masonry Gallery look w/ Flexbox or plugin/library 
