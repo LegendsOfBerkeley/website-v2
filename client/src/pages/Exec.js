@@ -61,7 +61,7 @@ const Exec = () => {
         <Card icon={images["thereserico.png"]} name={"Therese Rico"} alias={"PURPLE LILAC12"} position={"Tournament Operations and Championship Lead"} bio={"Business Administration, Class of 2024"}></Card>
       </button>
       <button class="button" data-tip data-for="jacob">
-        <Card icon={images["jacobknudson.png"]} name={"Jacob Knudson"} alias={"woopah"} position={"Marketing and Outreach Lead"} bio={"Computer Science, Class of 2025"}></Card>
+        <Card icon={images["jacobknudson.png"]} name={"Jacob Knudson"} alias={"woopah"} position={"Marketing and Outreach Lead"} bio={"Cognitive Science, Class of 2025"}></Card>
       </button>
       <button class="button" data-tip data-for="sylvia">
         <Card icon={images["sylviachen.png"]} name={"Sylvia Chen"} alias={"DeathbyYogurt"} position={"Design Lead"} bio={"Computer Science, Class of 2024"}></Card>
@@ -97,7 +97,7 @@ const Exec = () => {
         why={"Back in high school, I hosted League and Overwatch tournaments as a part of my company. After that era ended, I wanted to continue running these tournaments in college, so I joined BL. It also helps that I've played league for a better half of the last decade."}
         interests={"I like to do research on the stock market, learn random stuff, and try to improve my financial independence knowledge (like how to increase credit score, etc)"}></Info>
       </ReactTooltip>
-        <ReactTooltip className="tooltip" id="gilberto" place="right" effect="solid">
+        <ReactTooltip className="tooltip" id="gilberto" effect="solid">
         <Info bioName={"Gilberto Diaz"} favchar={"Teemo! (From Legends of Runeterra)"}
         why={"I like outdoor activities like soccer and frisbee! I also like reading and my favorite non-riot video game is Spelunky 2. :)"}
         interests={"BL lets me meet more LoR players in the wild, and play league with groups of friends! I love the in person social aspects of it too, and I think the BL community has amazing potential."}></Info>
