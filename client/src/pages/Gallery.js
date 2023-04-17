@@ -2,8 +2,6 @@ import React from 'react'
 import './Gallery.css'
 import Nav from '../components/navbar/Nav'
 import {useState} from 'react'; 
-import placeholder2 from '../images/shop/placeholder2.png'
-import placeholder3 from '../images/shop/placeholder3.png'
 import Footer from '../components/Footer'
 import { FFN1, GTG1, GTG2, ICE1, ICE2, ICE3, ICE4, ICE5, 
   SAKURA1, SAKURA2, SAKURA3, 
