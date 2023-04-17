@@ -155,6 +155,10 @@ function Gallery() {
     
     }
     window.addEventListener('resize', handleResize)
+
+    return _ => {
+      window.removeEventListener('resize', handleResize)
+    }
   })
 
   getImagesPerRow()
