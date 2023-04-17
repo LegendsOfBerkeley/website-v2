@@ -38,6 +38,17 @@ function getImagesPerRow(innerWidth) {
   if(innerWidth >= 1000) return 
 }
 
+function debounce(func, time) {
+  let timer
+  return _ => {
+    clearTimeout(timer)
+    timer = setTimeout(_ => {
+      timer = null
+      func.apply(this, arguments)
+    }, time)
+  };
+}
+
 
 
 //Possible issues with lack of image compression causing image to take a while to load
@@ -147,21 +158,21 @@ function Gallery() {
   let lanClassName = "category-button";
 
   React.useEffect(() => {
-    function handleResize() {
+    const debouncedHandleResize = debounce(function handleResize() {
       setWindowSize({
         height: window.innerHeight,
         width: window.innerWidth
       })
-    
-    }
-    window.addEventListener('resize', handleResize)
+      console.log(windowSize.width);
+    }, 500)
+    window.addEventListener('resize', debouncedHandleResize)
 
     return _ => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener('resize', debouncedHandleResize)
     }
   })
 
-  getImagesPerRow()
+  let perRow = getImagesPerRow(windowSize.height)
 
   function setSocial() {
     setCategory("Social");
