@@ -61,6 +61,18 @@ function adjustGalleryStyle(numPerRow) {
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
+      // columnGap: "7vh",
+      // rowGap: 20vh;
+    };
+    return photoRowStyle
+  }
+  if(numPerRow === 2) {
+    const photoRowStyle = {
+      display: "flex", 
+      flexWrap: "wrap",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
       columnGap: "7vh",
       // rowGap: 20vh;
     };
@@ -76,8 +88,8 @@ function adjustGalleryStyle(numPerRow) {
 function SocialPhotos(props) {
   return (
     <div className="gallery-container">
-      {/* <div className="photo-row"> */}
-      <div style={props.photoRowStyle}>
+      <div className="photo-row">
+      {/* <div style={props.photoRowStyle}> */}
         <PhotoItem image={BANQ4}></PhotoItem>
         <PhotoItem image={GTG1}></PhotoItem>
         <PhotoItem image={GTG2}></PhotoItem>
