@@ -49,6 +49,28 @@ function debounce(func, time) {
   };
 }
 
+function adjustGalleryStyle(numPerRow) {
+  const defaultPhotoRowStyle = {
+    display: "flex", 
+    alignItems: "center",
+    justifyContent: "center",
+    columnGap: "7vh",
+    rowGap: "20vh",
+  };
+  if(numPerRow === 1) {
+    const photoRowStyle = {
+      display: "flex", 
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      columnGap: "7vh",
+      // rowGap: 20vh;
+    };
+    return photoRowStyle
+  }
+  return defaultPhotoRowStyle;
+}
+
 
 
 //Possible issues with lack of image compression causing image to take a while to load
@@ -56,7 +78,8 @@ function debounce(func, time) {
 function SocialPhotos(props) {
   return (
     <div className="gallery-container">
-      <div className="photo-row">
+      {/* <div className="photo-row"> */}
+      <div style={props.photoRowStyle}>
         <PhotoItem image={BANQ4}></PhotoItem>
         <PhotoItem image={GTG1}></PhotoItem>
         <PhotoItem image={GTG2}></PhotoItem>
@@ -157,6 +180,7 @@ function Gallery() {
   let tourneyClassName = "category-button";
   let lanClassName = "category-button";
 
+  // handles window resizing and records in state variable
   React.useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
       setWindowSize({
@@ -165,14 +189,16 @@ function Gallery() {
       })
       console.log(windowSize.width);
     }, 500)
-    window.addEventListener('resize', debouncedHandleResize)
+    window.addEventListener('resize', debouncedHandleResize);
 
     return _ => {
-      window.removeEventListener('resize', debouncedHandleResize)
+      window.removeEventListener('resize', debouncedHandleResize);
     }
   })
 
-  let perRow = getImagesPerRow(windowSize.height)
+  let perRow = getImagesPerRow(windowSize.height);
+
+  let photoRowStyle = adjustGalleryStyle(perRow);
 
   function setSocial() {
     setCategory("Social");
@@ -209,9 +235,9 @@ function Gallery() {
           <button className={tourneyClassName} onClick={() => setTournament()}>Tournaments</button>
           <button className={lanClassName} onClick={() => setLAN()}>LAN Parties</button>
         </div>
-        {category === "Social" && <SocialPhotos/>}
-        {category === "LAN" && <LANPhotos/>}
-        {category === "Tournament" && <TournamentPhotos/>}
+        {category === "Social" && <SocialPhotos photoRowStyle={photoRowStyle}/>}
+        {category === "LAN" && <LANPhotos photoRowStyle={photoRowStyle}/>}
+        {category === "Tournament" && <TournamentPhotos photoRowStyle={photoRowStyle}/>}
       </div>
       <Footer />
     </div>
