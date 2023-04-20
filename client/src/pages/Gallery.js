@@ -2,8 +2,6 @@ import React from 'react'
 import './Gallery.css'
 import Nav from '../components/navbar/Nav'
 import {useState} from 'react'; 
-import placeholder2 from '../images/shop/placeholder2.png'
-import placeholder3 from '../images/shop/placeholder3.png'
 import Footer from '../components/Footer'
 import { FFN1, GTG1, GTG2, ICE1, ICE2, ICE3, ICE4, ICE5, 
   SAKURA1, SAKURA2, SAKURA3, 
@@ -38,37 +36,76 @@ function getImagesPerRow(innerWidth) {
   if(innerWidth >= 1000) return 
 }
 
+function debounce(func, time) {
+  let timer
+  return _ => {
+    clearTimeout(timer)
+    timer = setTimeout(_ => {
+      timer = null
+      func.apply(this, arguments)
+    }, time)
+  };
+}
+
+function adjustGalleryStyle(numPerRow) {
+  const defaultPhotoRowStyle = {
+    display: "flex", 
+    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "center",
+    columnGap: "7vh",
+    rowGap: "20vh",
+  };
+  if(numPerRow === 1) {
+    const photoRowStyle = {
+      display: "flex", 
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      // columnGap: "7vh",
+      // rowGap: 20vh;
+    };
+    return photoRowStyle
+  }
+  if(numPerRow === 2) {
+    const photoRowStyle = {
+      display: "flex", 
+      flexWrap: "wrap",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      columnGap: "7vh",
+      // rowGap: 20vh;
+    };
+    return photoRowStyle
+  }
+  return defaultPhotoRowStyle;
+}
+
 
 
 //Possible issues with lack of image compression causing image to take a while to load
 
 function SocialPhotos(props) {
   return (
-    <div className="gallery-container">
-      <div className="photo-row">
+    <div className="photoRowStyle">
+      {/* <div style={props.photoRowStyle}> */}
         <PhotoItem image={BANQ4}></PhotoItem>
         <PhotoItem image={GTG1}></PhotoItem>
         <PhotoItem image={GTG2}></PhotoItem>
         <PhotoItem image={ICE1}></PhotoItem>
-      </div>
-      <div className="photo-row">
         <PhotoItem image={ICE2}></PhotoItem>
         <PhotoItem image={ICE3}></PhotoItem>
         <PhotoItem image={ICE4}></PhotoItem>
         <PhotoItem image={SAKURA1}></PhotoItem>
-      </div>
-      <div className="photo-row">
         <PhotoItem image={SAKURA2}></PhotoItem>
         <PhotoItem image={SAKURA3}></PhotoItem>
         <PhotoItem image={BANQ1}></PhotoItem>
         <PhotoItem image={BANQ2}></PhotoItem>
-      </div>
-      <div className="photo-row">
         <PhotoItem image={GAME1}></PhotoItem>
         <PhotoItem image={GAME2}></PhotoItem>
         <PhotoItem image={BANQ5}></PhotoItem>
         <PhotoItem image={BANQ6}></PhotoItem>
-      </div>
     </div>
     
   )
@@ -146,18 +183,25 @@ function Gallery() {
   let tourneyClassName = "category-button";
   let lanClassName = "category-button";
 
+  // handles window resizing and records in state variable
   React.useEffect(() => {
-    function handleResize() {
+    const debouncedHandleResize = debounce(function handleResize() {
       setWindowSize({
         height: window.innerHeight,
         width: window.innerWidth
       })
-    
+      console.log(windowSize.width);
+    }, 500)
+    window.addEventListener('resize', debouncedHandleResize);
+
+    return _ => {
+      window.removeEventListener('resize', debouncedHandleResize);
     }
-    window.addEventListener('resize', handleResize)
   })
 
-  getImagesPerRow()
+  let perRow = getImagesPerRow(windowSize.height);
+
+  let photoRowStyle = adjustGalleryStyle(perRow);
 
   function setSocial() {
     setCategory("Social");
@@ -194,9 +238,9 @@ function Gallery() {
           <button className={tourneyClassName} onClick={() => setTournament()}>Tournaments</button>
           <button className={lanClassName} onClick={() => setLAN()}>LAN Parties</button>
         </div>
-        {category === "Social" && <SocialPhotos/>}
-        {category === "LAN" && <LANPhotos/>}
-        {category === "Tournament" && <TournamentPhotos/>}
+        {category === "Social" && <SocialPhotos photoRowStyle={photoRowStyle}/>}
+        {category === "LAN" && <LANPhotos photoRowStyle={photoRowStyle}/>}
+        {category === "Tournament" && <TournamentPhotos photoRowStyle={photoRowStyle}/>}
       </div>
       <Footer />
     </div>
