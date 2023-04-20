@@ -50,6 +50,7 @@ function debounce(func, time) {
 function adjustGalleryStyle(numPerRow) {
   const defaultPhotoRowStyle = {
     display: "flex", 
+    flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
     columnGap: "7vh",
@@ -87,32 +88,24 @@ function adjustGalleryStyle(numPerRow) {
 
 function SocialPhotos(props) {
   return (
-    <div className="gallery-container">
-      <div className="photo-row">
+    <div className="photoRowStyle">
       {/* <div style={props.photoRowStyle}> */}
         <PhotoItem image={BANQ4}></PhotoItem>
         <PhotoItem image={GTG1}></PhotoItem>
         <PhotoItem image={GTG2}></PhotoItem>
         <PhotoItem image={ICE1}></PhotoItem>
-      </div>
-      <div className="photo-row">
         <PhotoItem image={ICE2}></PhotoItem>
         <PhotoItem image={ICE3}></PhotoItem>
         <PhotoItem image={ICE4}></PhotoItem>
         <PhotoItem image={SAKURA1}></PhotoItem>
-      </div>
-      <div className="photo-row">
         <PhotoItem image={SAKURA2}></PhotoItem>
         <PhotoItem image={SAKURA3}></PhotoItem>
         <PhotoItem image={BANQ1}></PhotoItem>
         <PhotoItem image={BANQ2}></PhotoItem>
-      </div>
-      <div className="photo-row">
         <PhotoItem image={GAME1}></PhotoItem>
         <PhotoItem image={GAME2}></PhotoItem>
         <PhotoItem image={BANQ5}></PhotoItem>
         <PhotoItem image={BANQ6}></PhotoItem>
-      </div>
     </div>
     
   )
